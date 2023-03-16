@@ -179,19 +179,31 @@
 
 
 
-                <article>
-                        <p> Enter Message ... </p>
-                </article>
-                <article>
-                        <p> Enter Your Name </p>
-                </article>
-                <article>
-                        <p> Enter Your E-mail </p>
-                </article>
-                <article>
-                        <p> Enter Your Phone Number </p>
-                </article>
-                <nav>send</nav>
+                <form action="" method="get" class="form-example">
+                        <div class="form-example">
+                                <label for="name">Type your msg: </label>
+                                <input type="text" name="msg" id="id" required>
+                        </div>
+
+                        <div class="form-example">
+                                <label for="name">Type your name: </label>
+                                <input type="text" name="name" id="name" required>
+                        </div>
+
+                        <div class="form-example">
+                                <label for="email">Enter your email: </label>
+                                <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="form-example">
+                                <label for="email">Enter your phoneNumber: </label>
+                                <input type="number" name="number" id="" required>
+                        </div>
+
+                        <div class="form-example">
+                                <input type="submit" value="Send!">
+                        </div>
+                </form>
 
 
 
