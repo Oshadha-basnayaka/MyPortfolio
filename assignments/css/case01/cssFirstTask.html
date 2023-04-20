@@ -2,9 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>cssFirstTask</title>
+
+    <style>
+
+       body>section{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        body>section>section{
+            height: 50%;
+            width: 50%;
+            position: absolute;
+        }
+
+        body>section>section:nth-child(1){
+
+            background-color: red;
+            left: 0;
+            top: 0;
+
+        }
+
+       body>section>section:nth-child(2){
+
+           background-color: green;
+           right: 0;
+           top: 0;
+
+       }
+
+       body>section>section:nth-child(3){
+
+           background-color: deeppink;
+           right: 0;
+           bottom: 0;
+
+       }
+
+       body>section>section:nth-child(4){
+
+           background-color: orange;
+           left: 0;
+           bottom: 0;
+
+       }
+
+       body>section>section>div{
+
+           height: 200px;
+           width: 200px;
+           background-color: #eeeeee;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           position: absolute;
+
+       }
+       body>section>section>div:nth-child(1){
+           border-radius: 100%;
+       }
+
+       body>section>section>div>div{
+
+           height: 100px;
+           width: 100px;
+           background-color: red;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           position: absolute;
+
+       }
+
+       body>section>div{
+
+           height: 200px;
+           width: 200px;
+           background-color: #eeeeee;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           position: absolute;
+
+       }
+
+       body>section>div>div{
+
+           height: 150px;
+           width: 150px;
+           background-color: red;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           position: absolute;
+
+       }
+
+       body>section>div>div:nth-child(1){
+           border-radius: 100%;
+       }
+
+
+
+    </style>
 </head>
 <body>
+
+<section>
+
+    <section>
+        <div><div></div></div>
+
+    </section>
+
+    <section>
+        <div><div></div></div>
+
+    </section>
+
+    <section>
+        <div><div></div></div>
+
+    </section>
+
+    <section>
+        <div><div></div></div>
+
+    </section>
+
+    <div><div></div></div>
+
+</section>
 
 </body>
 </html>
