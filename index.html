@@ -20,113 +20,107 @@
 
     <style>
 
-        body {
-            position: relative;
+
+        /*        header {*/
+        /*            height: 10%;*/
+        /*            z-index: 3;*/
+        /*            top: 0;*/
+        /*            right: 0;*/
+        /*            position: sticky;*/
+        /*            background-color: white;*/
+        /*            border: 2px solid black;*/
 
 
-        }
+        /*        }*/
 
-        header {
-            height: 10%;
-            z-index: 3;
-            top: 0;
-            right: 0;
-            position: sticky;
-            background-color: white;
-            border: 2px solid black;
+        /*        body > header > nav {*/
+        /*            text-decoration: none;*/
 
+        /*            padding-left: 70%;*/
 
-        }
+        /*        }*/
 
-        body > header > nav {
-            text-decoration: none;
+        /*        body > header > nav > ul {*/
+        /*            margin-top: 0;*/
+        /*        }*/
 
-            padding-left: 70%;
+        /*        body > header > nav > ul > li {*/
+        /*            display: inline;*/
 
-        }
+        /*            font-size: 16px;*/
 
-        body > header > nav > ul {
-            margin-top: 0;
-        }
+        /*        }*/
 
-        body > header > nav > ul > li {
-            display: inline;
-
-            font-size: 16px;
-
-        }
-
-        body > header > nav > ul > li > a {
-            text-decoration: none;
-            margin: 20px;
-        }
+        /*        body > header > nav > ul > li > a {*/
+        /*            text-decoration: none;*/
+        /*            margin: 20px;*/
+        /*        }*/
 
 
-        .header_logo_change {
-            padding-right: 10%;
-            width: 240px;
-            height: 70px;
-        }
+        /*        .header_logo_change {*/
+        /*            padding-right: 10%;*/
+        /*            width: 240px;*/
+        /*            height: 70px;*/
+        /*        }*/
 
 
-        /*mainaka patanganne*/
+        /*        !*mainaka patanganne*!*/
 
 
-        main > section {
+        /*        main > section {*/
 
-            height: 1%;
-            width: 100%;
-            border: 1px solid black;
-
-
-        }
-
-        main > section:nth-child(1) {
-            background-color: #FBF6EC;
-        }
-
-        main > section:nth-child(3) {
-            background-color: #FBF6EC;
-        }
-
-        main > section:nth-child(5) {
-            background-color: #FBF6EC;
-        }
-
-        main > section > h3 {
-            background: none;
-            padding-left: 50%;
-        }
+        /*            height: 1%;*/
+        /*            width: 100%;*/
+        /*            border: 1px solid black;*/
 
 
-        .section1_artical_tiak_madat {
-            padding-left: 10%;
-            padding-top: 3%;
-        }
+        /*        }*/
 
-        .section1_photo_dakune_konata {
-            padding-left: 78%;
-        }
+        /*        main > section:nth-child(1) {*/
+        /*            background-color: #FBF6EC;*/
+        /*        }*/
 
-        .section2_podichede_dakune_konata {
-            padding-left: 78%;
-        }
+        /*        main > section:nth-child(3) {*/
+        /*            background-color: #FBF6EC;*/
+        /*        }*/
 
-        .divcolor{
+        /*        main > section:nth-child(5) {*/
+        /*            background-color: #FBF6EC;*/
+        /*        }*/
 
-          background-color: peru;
-            height: 10%;
-            width: 200px;
-        }
+        /*        main > section > h3 {*/
+        /*            background: none;*/
+        /*            padding-left: 50%;*/
+        /*        }*/
 
-        main>section:nth-child(3){
-            display: flex;
-            height: 1000px;
-        }
-        main>section:nth-child(3) nav{
-            flex-shrink: 0;
-        }
 
+        /*        .section1_artical_tiak_madat {*/
+        /*            padding-left: 10%;*/
+        /*            padding-top: 3%;*/
+        /*        }*/
+
+        /*        .section1_photo_dakune_konata {*/
+        /*            padding-left: 78%;*/
+        /*        }*/
+
+        /*        .section2_podichede_dakune_konata {*/
+        /*            padding-left: 78%;*/
+        /*        }*/
+
+        /*        .divcolor{*/
+
+        /*          background-color: peru;*/
+        /*            height: 10%;*/
+        /*            width: 200px;*/
+        /*        }*/
+
+        /*        main>section:nth-child(3){*/
+        /*            display: flex;*/
+        /*            height: 100vh;*/
+        /*        }*/
+        /*        main>section:nth-child(3) nav{*/
+        /*            flex-shrink: 0;*/
+        /*        }*/
 
 
     </style>
@@ -137,13 +131,13 @@
 
 <header>
 
-    <img class="header_logo_change" src="assestes/img/Br_logo-removebg-preview.png">
+    <img width="10%" src="assestes/img/Br_logo-removebg-preview.png">
 
     <nav>
         <ul>
-            <li><a href="https://www.ijse.lk/"> home</a></li>
+            <li><a href="https://www.ijse.lk/"> Home</a></li>
             <li><a href="https://www.ijse.lk/"> AbouthMe</a></li>
-            <li><a href="https://www.ijse.lk/"> Educationeme</a></li>
+            <li><a href="https://www.ijse.lk/"> Educatione</a></li>
             <li><a href="https://www.ijse.lk/"> Skill</a></li>
             <li><a href="https://www.ijse.lk/"> MyWorks</a></li>
             <li><a href="https://www.ijse.lk/"> Contact</a></li>
@@ -155,50 +149,45 @@
 <main>
 
 
-    <section>
+    <section id="home">
         <h3>Home</h3>
-        <article class="section1_artical_tiak_madat">
-            <p> Hello , it s me</p>
-            <p>Oshadha Basnayaka</p>
-        </article>
 
-        <img class="section1_photo_dakune_konata" usemap="#map" src="assestes/img/section1magephotoeka.png" alt=""
-             width="" height="">
+        <p> Hello , it s me</p>
+        <h2>Oshadha Basnayaka</h2>
 
-        <!--        <map name="map">-->
-        <!--            <area shape="circle" coords="214, 100, 10" href="http://ijse.lk">-->
-        <!--            <area shape="circle" coords="264, 100, 10" href="http://google.lk">-->
-        <!--        </map>-->
+
+        <img src="assestes/img/section1magephotoeka.png">
 
 
     </section>
-    <section>
+    <section id="abouth">
         <h3>AbouthMe</h3>
-        <aside>
-            <figure><img src="assestes/img/session2wampathephoto.png"></figure>
-        </aside>
-        <article class="section2_podichede_dakune_konata">
-            <p>Hi ! My name is Oshadha Basnayaka and i’am from <br> Weligama . i’m student of IJSE
-                completing a Software <br>Engineering deploma . i was born in 19th of june 2002 . my <br>
-                strength is im selft-motivated and smart working . i genuinely <br>want to build a
-                succuesseful career in this industry</p>
-        </article>
+
+        <img src="assestes/img/session2wampathephoto.png">
+
+
+        <p>Hi ! My name is Oshadha Basnayaka and i’am from <br> Weligama . i’m student of IJSE
+            completing a Software <br>Engineering deploma . i was born in 19th of june 2002 . my <br>
+            strength is im selft-motivated and smart working . i genuinely <br>want to build a
+            succuesseful career in this industry</p>
+
     </section>
-    <section>
-        <h3>Educatione</h3>
+    <section id="education">
+        <h3>Educatione </h3>
         <aside>
-            <div class="divcolor">
-            <figure><img src="assestes/img/18203-removebg-preview.png"></figure>
+            <div>
+                <figure><img src="assestes/img/18203-removebg-preview.png"></figure>
             </div>
         </aside>
         <aside>
-            <div class="divcolor">
-            <figure><img src="assestes/img/graduation-concept-illustration_114360-625-removebg-preview.png"></figure>
+            <div>
+                <figure><img src="assestes/img/graduation-concept-illustration_114360-625-removebg-preview.png">
+                </figure>
             </div>
         </aside>
         <aside>
-            <div class="divcolor">
-            <figure><img src="assestes/img/18203-removebg-preview.png"></figure>
+            <div>
+                <figure><img src="assestes/img/18203-removebg-preview.png"></figure>
             </div>
         </aside>
         <article>
@@ -216,7 +205,7 @@
             <figure><img src="assestes/img/Group%207.jpg"></figure>
         </aside>
     </section>
-    <section>
+    <section id="skill">
         <h3>Skill</h3>
         <aside>
             <aside>
@@ -255,7 +244,7 @@
 
 
     </section>
-    <section>
+    <section id="myWork">
         <h3>My Workes</h3>
         <aside>
             <figure><img src="assestes/img/Screenshot%20(23)%201.jpg"></figure>
@@ -297,25 +286,6 @@
             width="500"
             height="500">
     </object>
-
-
-    <!--    <iframe id="inlineFrameExample"-->
-    <!--            title="Inline Frame Example"-->
-    <!--            width="500"-->
-    <!--            height="500"-->
-    <!--            src="https://www.ijse.lk">-->
-    <!--    </iframe>-->
-
-    <!--    <iframe width="560" height="315" src="https://www.youtube.com/embed/xtNhBkhFoKM" title="YouTube video player"-->
-    <!--            frameborder="0"-->
-    <!--            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-    <!--            allowfullscreen></iframe>-->
-
-
-    <!--    <picture>-->
-    <!--        <source srcset="assestes/img/fb.png" media="(min-width:800px)">-->
-    <!--        <img src="assestes/img/insta.png" alt="" width="400px">-->
-    <!--    </picture>-->
 
 
     <br><br>

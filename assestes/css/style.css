@@ -1,7 +1,276 @@
-h3 {
-    background-color: blue;
+/*header style tika*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-h2 {
-     background-color: blue;
- }
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+header nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*home*/
+
+
+#home {
+    background-color: #FBF6EC;
+    padding: 20px;
+    text-align: center;
+    height: 80vh;
+    position: relative;
+
+
+}
+
+#home h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+
+
+#home  p {
+    padding-right: 80%;
+    margin: auto;
+    position: absolute;
+    left: 80px;
+    bottom: 500px;
+
+}
+
+#home h2{
+    padding-right: 80%;
+    margin-inline: 10px;
+    position: absolute;
+    margin: auto;
+    left: 80px;
+    bottom: 470px;
+}
+
+
+#home img {
+    width: 400px;
+    height: 600px;
+    display: block;
+    margin:  auto;
+    padding-left: 70%;
+    position: absolute;
+    right: 80px;
+   top: 100px;
+}
+
+
+/*abouth*/
+
+
+#abouth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    position: relative;
+    height: 80vh;
+}
+
+#abouth h3 {
+    width: 100%;
+    text-align: center;
+    margin:auto;
+    bottom: 800px;
+    position: absolute;
+}
+
+#abouth img {
+    margin: auto;
+    position: absolute;
+    width: 600px;
+    height: 460px;
+    left: 80px;
+}
+
+#abouth p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    position: absolute;
+}
+
+
+/*education*/
+
+#education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF6EC;
+}
+
+#education h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#education aside {
+    flex: 1 0 30%;
+    margin: 10px;
+}
+
+#education figure {
+    margin: 0;
+}
+
+#education img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#education aside img:hover {
+    transform: scale(1.1);
+}
+
+#education article {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+
+/*skill*/
+
+
+#skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#skill aside {
+
+    margin: 10px;
+}
+
+#skill aside figure {
+    margin: 0;
+}
+
+#skill aside img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#skill aside img:hover {
+    transform: scale(1.1);
+}
+
+#skill article {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+
+/*myWork*/
+
+
+#myWork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF6EC;
+}
+
+#myWork h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#myWork aside {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+#myWork aside figure {
+    margin: 0;
+}
+
+#myWork aside img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#myWork aside img:hover {
+    transform: scale(1.1);
+}
+
+#myWork article {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+
+
+/*footer*/
+
+
+
+
+
 
