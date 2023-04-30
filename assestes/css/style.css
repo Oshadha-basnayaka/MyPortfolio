@@ -149,6 +149,7 @@ header img {
     align-items: center;
     background-color: #FBF6EC;
     position: relative;
+    height: 120vh;
 }
 
 #education h3 {
@@ -174,7 +175,10 @@ header img {
 #education article {
     flex: 1 0 100%;
     text-align: center;
+
+    border-radius:50%;
 }
+
 
 
 /*skill*/
@@ -185,6 +189,7 @@ header img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #skill h3 {
@@ -204,10 +209,11 @@ header img {
 }
 
 #skill aside img {
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
+
+
     transition: transform 0.3s ease;
+   margin: auto;
+    display: grid;
 }
 
 #skill aside img:hover {
@@ -247,9 +253,9 @@ header img {
 }
 
 #myWork aside img {
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
+
+
+
     transition: transform 0.3s ease;
 }
 
