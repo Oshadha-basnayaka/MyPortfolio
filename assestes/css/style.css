@@ -55,48 +55,49 @@ header img {
     background-color: #FBF6EC;
     padding: 20px;
     text-align: center;
-    height: 80vh;
+    height: 85vh;
     position: relative;
 
 
 }
 
-#home h3 {
-    width: 100%;
-    text-align: center;
-    margin-top: 90px;
-}
+/*#home h3 {*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*    margin-top: 90px;*/
+/*}*/
 
 
 
 #home  p {
-    padding-right: 80%;
     margin: auto;
     position: absolute;
     left: 80px;
-    bottom: 500px;
+    bottom: 520px;
+    font-size: 25px;
 
 }
 
 #home h2{
-    padding-right: 80%;
+
     margin-inline: 10px;
     position: absolute;
     margin: auto;
     left: 80px;
     bottom: 470px;
+    font-size: 50px;
 }
 
 
 #home img {
-    width: 400px;
-    height: 600px;
+    width: 450px;
+    height: 700px;
     display: block;
     margin:  auto;
     padding-left: 70%;
     position: absolute;
     right: 80px;
-   top: 100px;
+   top: 80px;
 }
 
 
@@ -110,14 +111,14 @@ header img {
     justify-content: center;
     padding: 50px 0;
     position: relative;
-    height: 80vh;
+    height: 60vh;
 }
 
 #abouth h3 {
     width: 100%;
     text-align: center;
     margin:auto;
-    bottom: 800px;
+    bottom: 600px;
     position: absolute;
 }
 
@@ -131,10 +132,11 @@ header img {
 
 #abouth p {
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 1.5;
-    max-width: 800px;
+   margin: auto;
     position: absolute;
+    right: 70px;
 }
 
 
@@ -146,6 +148,7 @@ header img {
     justify-content: center;
     align-items: center;
     background-color: #FBF6EC;
+    position: relative;
 }
 
 #education h3 {
@@ -154,20 +157,14 @@ header img {
     margin-bottom: 50px;
 }
 
-#education aside {
-    flex: 1 0 30%;
-    margin: 10px;
-}
 
-#education figure {
-    margin: 0;
-}
 
 #education img {
-    max-width: 70%;
-    height: auto;
+
     display: block;
     transition: transform 0.3s ease;
+   margin: auto;
+
 }
 
 #education aside img:hover {
