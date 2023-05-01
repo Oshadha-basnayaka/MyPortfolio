@@ -283,6 +283,7 @@ position: absolute;
     justify-content: center;
     align-items: center;
     background-color: #FBF6EC;
+    height: 100vh;
 }
 
 #myWork h3 {
