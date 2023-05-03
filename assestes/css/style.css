@@ -55,7 +55,7 @@ header img {
     background-color: #FBF6EC;
     padding: 20px;
     text-align: center;
-    height: 85vh;
+    height: 95vh;
     position: relative;
 
 
@@ -105,6 +105,7 @@ header img {
     height: 50px;
     position: absolute;
     margin: auto;
+    top: 380px;
 position: absolute;
 
 }
@@ -115,7 +116,7 @@ position: absolute;
     margin: auto;
 
     right: 1500px;
-    top: 280px;
+
 }
 #home aside figure:nth-child(2){
 
@@ -123,7 +124,7 @@ position: absolute;
     margin: auto;
 
     right: 1700px;
-    top: 280px;
+
 }
 #home aside figure:nth-child(3){
 
@@ -131,7 +132,7 @@ position: absolute;
     margin: auto;
 
     right: 1650px;
-    top: 280px;
+
 }
 
 #home aside figure:nth-child(4){
@@ -140,7 +141,7 @@ position: absolute;
     margin: auto;
 
     right: 1600px;
-    top: 280px;
+
 }
 #home aside figure:nth-child(5){
 
@@ -148,7 +149,7 @@ position: absolute;
     margin: auto;
 
     right: 1550px;
-    top: 280px;
+
 }
 
 
