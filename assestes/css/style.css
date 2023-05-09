@@ -1,3 +1,11 @@
+/*body*/
+
+@media screen and (max-width: 800px){
+    .container {width: 100%}
+    header {width: 100%}
+    #home {width: 100%}
+}
+
 /*header style tika*/
 
 header {
@@ -392,7 +400,7 @@ display: grid;
 /*    right: 10px*/
 /*}*/
 
-footer {
+#contact {
     background-color: #f2f2f2;
     color: #333;
     padding: 20px;
@@ -401,50 +409,50 @@ footer {
     justify-content: space-between;
 }
 
-footer h3 {
+#contact h3 {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
 }
 
-footer li {
+#contact li {
     list-style-type: none;
 }
 
-footer a {
+#contact a {
     color: #333;
     text-decoration: none;
 }
 
-footer a:hover {
+#contact a:hover {
     color: #007bff;
 }
 
-footer address {
+#contact address {
     margin-bottom: 10px;
 }
 
-footer aside {
+#contact aside {
     display: flex;
     justify-content: space-between;
     width: 150px;
 }
 
-footer figure {
+#contact figure {
     margin: 0;
 }
 
-footer form {
+#contact form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
 
-footer label {
+#contact label {
     margin-bottom: 10px;
 }
 
-footer textarea {
+#contact textarea {
     resize: none;
     margin-bottom: 10px;
 }
@@ -459,28 +467,45 @@ input[type="submit"] {
     border: 1px solid #ccc;
 }
 
-footer input[type="submit"] {
+#contact input[type="submit"] {
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
 }
 
-footer input[type="submit"]:hover {
+#contact input[type="submit"]:hover {
     background-color: #0062cc;
 }
 
-@media screen and (max-width: 768px) {
-    footer {
+/*@media screen and (max-width: 768px) {*/
+#contact {
         flex-direction: column;
     }
 
-    footer  aside {
+#contact  aside {
         width: 100%;
         margin-bottom: 10px;
     }
+/*}*/
+
+
+
+/*footer*/
+
+footer {
+    background-color: #FBF6EC;
+    height: 10vh;
+    position: relative;
+
 }
+footer h3{
 
+    font-style: italic;
+position: absolute;
+    margin-left: 40%;
+    margin-bottom: 20%;
 
+}
 
 
 
