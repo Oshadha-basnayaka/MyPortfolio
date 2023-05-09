@@ -107,7 +107,7 @@ header img {
     position: absolute;
     margin: auto;
     top: 340px;
-    position: absolute;
+
 
 }
 
@@ -403,7 +403,7 @@ display: grid;
 #contact {
     background-color: #f2f2f2;
     color: #333;
-    padding: 20px;
+    /*padding: 20px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -422,7 +422,22 @@ display: grid;
 #contact a {
     color: #333;
     text-decoration: none;
+    margin: auto;
+    left: 10px;
 }
+
+.myContactDetails aside>a {
+    width: 10px;
+    height: 70px;
+    background-color: #F8C96D;
+    border: 2px solid orange;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 40px;
+    left: 10px;
+}
+
+
 
 #contact a:hover {
     color: #007bff;
@@ -433,9 +448,17 @@ display: grid;
 }
 
 #contact aside {
+    width: 45%;
+    margin-bottom: 10px;
+    margin-left: 2vw;
+}
+
+.myContactDetails{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 150px;
+    align-items: start;
+    flex-wrap: wrap;
 }
 
 #contact figure {
@@ -443,9 +466,11 @@ display: grid;
 }
 
 #contact form {
+    width: 25%;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    margin-left: 5vw;
 }
 
 #contact label {
@@ -455,6 +480,7 @@ display: grid;
 #contact textarea {
     resize: none;
     margin-bottom: 10px;
+    width: 80%;
 }
 
 input[type="text"],
@@ -467,10 +493,16 @@ input[type="submit"] {
     border: 1px solid #ccc;
 }
 
+.txtInput{
+    width: 80%;
+}
+
 #contact input[type="submit"] {
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
+    position: absolute;
+    right: 80px;
 }
 
 #contact input[type="submit"]:hover {
@@ -478,14 +510,11 @@ input[type="submit"] {
 }
 
 /*@media screen and (max-width: 768px) {*/
-#contact {
-        flex-direction: column;
-    }
+/*#contact {*/
+/*        flex-direction: column;*/
+/*    }*/
 
-#contact  aside {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+
 /*}*/
 
 
@@ -494,16 +523,19 @@ input[type="submit"] {
 
 footer {
     background-color: #FBF6EC;
-    height: 10vh;
-    position: relative;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 footer h3{
 
-    font-style: italic;
-position: absolute;
-    margin-left: 40%;
-    margin-bottom: 20%;
+    /*font-style: italic;*/
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 100;
 
 }
 
