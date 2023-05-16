@@ -1,10 +1,6 @@
 /*body*/
 
-@media screen and (max-width: 800px){
-    .container {width: 100%}
-    header {width: 100%}
-    #home {width: 100%}
-}
+
 
 /*header style tika*/
 
@@ -73,7 +69,7 @@ header img {
 #home  p {
     margin: auto;
     position: absolute;
-    left: 85px;
+    left: 200px;
     bottom: 540px;
     font-size: 25px;
 
@@ -84,19 +80,19 @@ header img {
     margin-inline: 10px;
     position: absolute;
     margin: auto;
-    left: 80px;
+    left: 200px;
     bottom: 490px;
     font-size: 50px;
 }
 
 
-#home  img {
+#home section  img{
     width: 450px;
     height: 700px;
     display: block;
     margin:  auto;
     position: absolute;
-    right: 130px;
+    right: 230px;
     top: 133px;
 }
 
@@ -109,6 +105,7 @@ header img {
     top: 340px;
 
 
+
 }
 
 #home aside figure:nth-child(1){
@@ -116,7 +113,7 @@ header img {
     position: absolute;
     margin: auto;
 
-    right: 1450px;
+    right: 1480px;
 
 }
 #home aside figure:nth-child(2){
@@ -124,7 +121,7 @@ header img {
     position: absolute;
     margin: auto;
 
-    right: 1500px;
+    right: 1530px;
 
 }
 #home aside figure:nth-child(3){
@@ -132,7 +129,7 @@ header img {
     position: absolute;
     margin: auto;
 
-    right: 1550px;
+    right: 1590px;
 
 }
 
@@ -141,7 +138,7 @@ header img {
     position: absolute;
     margin: auto;
 
-    right: 1600px;
+    right: 1650px;
 
 }
 #home aside figure:nth-child(5){
@@ -149,7 +146,7 @@ header img {
     position: absolute;
     margin: auto;
 
-    right: 1650px;
+    right: 1710px;
 
 }
 
@@ -181,7 +178,7 @@ header img {
     position: absolute;
     width: 600px;
     height: 460px;
-    left: 80px;
+    left: 200px;
 }
 
 #abouth p {
@@ -190,7 +187,7 @@ header img {
     line-height: 1.5;
    margin: auto;
     position: absolute;
-    right: 70px;
+    right: 200px;
 }
 
 
@@ -286,7 +283,7 @@ header img {
     justify-content: center;
     align-items: center;
     background-color: #FBF6EC;
-    height: 100vh;
+    height: 120vh;
 }
 
 #myWork h3 {
@@ -294,6 +291,8 @@ header img {
     text-align: center;
     margin-bottom: 50px;
 }
+
+
 
 
 #myWork figure img {
@@ -314,91 +313,13 @@ display: grid;
     font-style: initial;
 }
 
-
-
-/*footer*/
-
-/* footer {*/
-
-
-/*position: relative;*/
-/*    height: 80vh;*/
-/*}*/
+#myWork div figure a{
+    text-decoration: none;
+    color: black;
+}
 
 
 
-/*footer h3 {*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*    margin-bottom: 50px;*/
-/*}*/
-
-/*footer li  {*/
-/*    position: absolute;*/
-/*    margin: auto;*/
-/*    left: 50px;*/
-/*    text-decoration: none;*/
-/*    color: black;*/
-/*}*/
-
-/*footer address{*/
-/*    position: absolute;*/
-/*    margin: auto;*/
-/*    left: 30px;*/
-/*    color: black;*/
-/*    display: inline-block;*/
-/*}*/
-
-/*footer address address:nth-child(1) {*/
-/*    top: 1px;*/
-
-
-/*}*/
-
-/*footer address address:nth-child(2) {*/
-/*    top: 100px;*/
-
-/*}*/
-
-/*footer address address:nth-child(3) {*/
-/*    top: 150px;*/
-
-/*}*/
-/*footer address address:nth-child(4) {*/
-/*    top: 200px;*/
-
-/*}*/
-/*footer address address:nth-child(5) {*/
-/*    top: 250px;*/
-
-/*}*/
-
-/*footer aside figure {*/
-
-
-/*    position: absolute;*/
-/*    bottom: 10px;*/
-
-/*}*/
-
-
-
-/*footer aside  figure img {*/
-
-/*    width: 50px;*/
-/*    height: 50px;*/
-/*    position: absolute;*/
-/*    bottom: 100px;*/
-/*   display: grid;*/
-
-/*}*/
-
-/*footer form {*/
-
-/*    position: absolute;*/
-/*    margin: auto;*/
-/*    right: 10px*/
-/*}*/
 
 #contact {
     background-color: white;
@@ -407,6 +328,7 @@ display: grid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 50vh;
 }
 
 #contact h3 {
@@ -536,6 +458,91 @@ footer h3{
     font-family: sans-serif;
     font-size: 13px;
     font-weight: 100;
+
+}
+
+
+
+
+/*response01*/
+
+
+
+@media screen1 and (max-width: 393px) {
+
+
+    /* Default styles */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav li {
+        margin: 0 15px;
+    }
+
+    header nav a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        border-radius: 10px;
+    }
+
+    header nav a:hover {
+        background-color: #F8C96D;
+        color: #FBF6EC;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            padding: 10px 20px;
+        }
+
+        header nav ul {
+            flex-direction: column;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        header nav li {
+            margin: 10px 0;
+        }
+
+        header img {
+            max-width: 80%;
+            margin-bottom: 10px;
+        }
+    }
+
+
 
 }
 
