@@ -1059,7 +1059,10 @@ footer h3{
 @media all and (min-width: 375px) and (max-width:  425px) {
 
 
-    /* Default styles */
+
+
+    /* Responsive styles for 475px width */
+
     header {
         display: flex;
         justify-content: space-between;
@@ -1089,12 +1092,12 @@ footer h3{
 
     header nav a {
         display: block;
-        padding: 15px;
+        padding: 10px;
         text-decoration: none;
         color: #333;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     header nav a:hover {
@@ -1110,30 +1113,35 @@ footer h3{
     /* Responsive styles for 475px width */
     @media (max-width: 475px) {
         header {
-            flex-direction: column;
-            padding: 10px 20px;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
+            position: static;
+            box-shadow: none;
         }
 
         header nav ul {
-            flex-direction: column;
+            flex-direction: row;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 0;
         }
 
         header nav li {
-            margin: 10px 0;
+            margin: 0 10px;
         }
 
         header img {
-            max-width: 80%;
-            margin-bottom: 10px;
+            max-width: 50px;
+            margin-bottom: 0;
         }
 
         header nav a {
-            padding: 10px;
-            border-radius: 5px;
+            padding: 5px;
+            border-radius: 3px;
         }
     }
+
+
 
 
 
