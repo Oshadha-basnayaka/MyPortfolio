@@ -468,7 +468,7 @@ footer h3{
 
 
 
-@media screen1 and (max-width: 393px) {
+@media all and (max-width: 393px) {
 
 
     /* Default styles */
