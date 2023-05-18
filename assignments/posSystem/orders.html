@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders</title>
+  <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+  <link rel="stylesheet" href="assets/nomalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Iso&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <script src="assets/js/bootstrap.js"></script>
+</head>
+<body class="bg-black">
+<header>
+  <nav class="navbar navbar-expand-md  bg-black border-bottom border-white">
+    <div class="container-fluid">
+      <a class="navbar-brand  text-warning" href="#">POS System</a>
+      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="customers.html">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="items.html">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-warning" href="orders.html">Orders</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link border-warning border rounded text-white" href="placeOrder.html">Place New
+              Order</a>
+          </li>
+        </ul>
+        <form class="d-flex me-3" role="search">
+          <input class="form-control me-2 bg-black border border-white text-white" type="search"
+                 placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-outline-warning">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container col">
+  <nav aria-label="breadcrumb" class="text-white">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item text-white"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active text-white" aria-current="page">Orders</li>
+    </ol>
+  </nav>
+  <section class="row  m-auto">
+    <table class="table text-white container col">
+      <thead class="text-warning">
+      <tr>
+        <th scope="col">Order ID</th>
+        <th scope="col">Date</th>
+        <th scope="col">Customer ID</th>
+        <th scope="col">Item ID</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Discount</th>
+        <th scope="col">Total</th>
+        <th scope="col">Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">O-001</th>
+        <td>2023-06-19</td>
+        <td>C-001</td>
+        <td>I-001</td>
+        <td>2</td>
+        <td>1000</td>
+        <td>30000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">O-002</th>
+        <td>2023-06-19</td>
+        <td>C-001</td>
+        <td>I-001</td>
+        <td>2</td>
+        <td>1000</td>
+        <td>30000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">O-003</th>
+        <td>2023-06-19</td>
+        <td>C-001</td>
+        <td>I-001</td>
+        <td>2</td>
+        <td>1000</td>
+        <td>30000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">O-004</th>
+        <td>2023-06-19</td>
+        <td>C-001</td>
+        <td>I-001</td>
+        <td>2</td>
+        <td>1000</td>
+        <td>30000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">0-005</th>
+        <td>2023-06-19</td>
+        <td>C-001</td>
+        <td>I-001</td>
+        <td>2</td>
+        <td>1000</td>
+        <td>30000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </section>
+</main>
+</body>
+</html>
