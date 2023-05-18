@@ -911,15 +911,15 @@ footer h3 {
     #home p {
         position: absolute;
         font-size: 18px;
-        bottom: 200px;
-        left: 160px;
+        bottom: 170px;
+        left: 188px;
     }
 
     #home h2 {
 
         position: absolute;
-        bottom: 160px;
-        left: 60px;
+        bottom: 120px;
+        left: 80px;
         text-align: center;
         font-size: 36px;
     }
@@ -928,7 +928,7 @@ footer h3 {
         width: 40%;
         height: 45%;
         display: block;
-        margin: 80px;
+        margin: 100px;
         position: absolute;
         right: 0;
         top: 0;
@@ -940,7 +940,7 @@ footer h3 {
         width: 30px;
         height: 30px;
         position: absolute;
-       top: 390px;
+       top: 430px;
         left: -100px;
     }
 
