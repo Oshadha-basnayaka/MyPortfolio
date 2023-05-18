@@ -1,6 +1,3 @@
-/*body*/
-
-
 
 /*header style tika*/
 
@@ -65,8 +62,7 @@ header img {
 }
 
 
-
-#home  p {
+#home p {
     margin: auto;
     position: absolute;
     left: 200px;
@@ -75,7 +71,7 @@ header img {
 
 }
 
-#home h2{
+#home h2 {
 
     margin-inline: 10px;
     position: absolute;
@@ -86,18 +82,18 @@ header img {
 }
 
 
-#home section  img{
+#home section img {
     width: 450px;
     height: 700px;
     display: block;
-    margin:  auto;
+    margin: auto;
     position: absolute;
     right: 230px;
     top: 133px;
 }
 
 
-#home aside figure img{
+#home aside figure img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -105,10 +101,9 @@ header img {
     top: 390px;
 
 
-
 }
 
-#home aside figure:nth-child(1){
+#home aside figure:nth-child(1) {
 
     position: absolute;
     margin: auto;
@@ -116,7 +111,8 @@ header img {
     right: 1480px;
 
 }
-#home aside figure:nth-child(2){
+
+#home aside figure:nth-child(2) {
 
     position: absolute;
     margin: auto;
@@ -124,7 +120,8 @@ header img {
     right: 1530px;
 
 }
-#home aside figure:nth-child(3){
+
+#home aside figure:nth-child(3) {
 
     position: absolute;
     margin: auto;
@@ -133,7 +130,7 @@ header img {
 
 }
 
-#home aside figure:nth-child(4){
+#home aside figure:nth-child(4) {
 
     position: absolute;
     margin: auto;
@@ -141,7 +138,8 @@ header img {
     right: 1650px;
 
 }
-#home aside figure:nth-child(5){
+
+#home aside figure:nth-child(5) {
 
     position: absolute;
     margin: auto;
@@ -149,7 +147,6 @@ header img {
     right: 1710px;
 
 }
-
 
 
 /*abouth*/
@@ -168,7 +165,7 @@ header img {
 #abouth h3 {
     width: 100%;
     text-align: center;
-    margin:auto;
+    margin: auto;
     bottom: 600px;
     position: absolute;
 }
@@ -185,7 +182,7 @@ header img {
     text-align: center;
     font-size: 25px;
     line-height: 1.5;
-   margin: auto;
+    margin: auto;
     position: absolute;
     right: 200px;
 }
@@ -210,12 +207,11 @@ header img {
 }
 
 
-
 #education img {
 
     display: grid;
     transition: transform 0.3s ease;
-   margin: auto;
+    margin: auto;
 
 }
 
@@ -227,15 +223,15 @@ header img {
     flex: 1 0 100%;
     text-align: center;
 
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 
-#education aside div{
+#education aside div {
     text-align: center;
 }
 
-#education aside div{
+#education aside div {
 
     margin: 20px;
 
@@ -259,7 +255,7 @@ header img {
     margin-bottom: 50px;
 }
 
-#skill  figure {
+#skill figure {
     margin: 40px;
 }
 
@@ -267,7 +263,7 @@ header img {
 
 
     transition: transform 0.3s ease;
-   margin: auto;
+    margin: auto;
 
 }
 
@@ -305,7 +301,7 @@ header img {
 #myWork figure img {
 
 
-display: grid;
+    display: grid;
     transition: transform 0.3s ease;
 }
 
@@ -320,14 +316,10 @@ display: grid;
     font-style: initial;
 }
 
-#myWork div figure a{
+#myWork div figure a {
     text-decoration: none;
     color: black;
 }
-
-
-
-
 
 
 /*contact*/
@@ -360,7 +352,7 @@ display: grid;
     left: 10px;
 }
 
-.myContactDetails aside>a {
+.myContactDetails aside > a {
     width: 10px;
     height: 70px;
     background-color: #F8C96D;
@@ -370,7 +362,6 @@ display: grid;
     margin-bottom: 40px;
     left: 10px;
 }
-
 
 
 #contact a:hover {
@@ -387,7 +378,7 @@ display: grid;
     margin-left: 2vw;
 }
 
-.myContactDetails{
+.myContactDetails {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -427,7 +418,7 @@ input[type="submit"] {
     border: 1px solid #ccc;
 }
 
-.txtInput{
+.txtInput {
     width: 80%;
 }
 
@@ -444,7 +435,6 @@ input[type="submit"] {
 }
 
 
-
 /*footer*/
 
 footer {
@@ -456,7 +446,8 @@ footer {
     align-items: center;
 
 }
-footer h3{
+
+footer h3 {
 
     /*font-style: italic;*/
     font-family: sans-serif;
@@ -468,10 +459,11 @@ footer h3{
 
 
 
+
 /*response01*/
 
 
-
+@media all and (max-width: 320px) {}
 
 @media all and (min-width: 320px) and (max-width: 375px) {
 
@@ -873,41 +865,35 @@ footer h3{
 @media all and (min-width: 375px) and (max-width:  425px) {
 
 
+        .header {
+            width: 100%;
+        }
 
+        .header img {
+            width: 100%;
+        }
 
-    /* Responsive styles for 475px width */
+        .header nav {
+            width: 100%;
+        }
 
+        .header nav ul {
+            display: flex;
+            flex-direction: column;
+        }
 
+        .header nav ul li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            margin-top: 2px;
+        }
 
-
-        header {
-            flex-direction: row;
-            justify-content: center;
+        .header nav ul li a {
+            display: block;
+            width: 100%;
             padding: 10px;
-            position: fixed;
-            box-shadow: none;
-        }
-
-        header nav ul {
-            flex-direction: row;
             text-align: center;
-            margin-top: 0;
         }
-
-        header nav li {
-            margin: 0 10px;
-        }
-
-        header img {
-            max-width: 50px;
-            margin-bottom: 0;
-        }
-
-        header nav a {
-            padding: 5px;
-            border-radius: 3px;
-        }
-
 
 
 
@@ -918,43 +904,44 @@ footer h3{
         background-color: #FBF6EC;
         padding: 20px;
         text-align: center;
-        height: 93vh;
+        height: 60vh;
         position: relative;
     }
 
     #home p {
-        margin: auto;
         position: absolute;
-        left: 10px;
-        bottom: 15%;
         font-size: 18px;
+        bottom: 200px;
+        left: 160px;
     }
 
     #home h2 {
-        margin-inline: 10px;
+
         position: absolute;
-        margin: auto;
-        left: 10px;
-        bottom: 20%;
+        bottom: 160px;
+        left: 60px;
+        text-align: center;
         font-size: 36px;
     }
 
     #home section img {
-        width: 100%;
-        height: auto;
+        width: 40%;
+        height: 45%;
         display: block;
-        margin: auto;
+        margin: 80px;
         position: absolute;
-        right: 10px;
-        top: 15%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 50px;
     }
 
     #home aside figure img {
         width: 30px;
         height: 30px;
         position: absolute;
-        margin: auto;
-        top: 30%;
+       top: 390px;
+        left: -100px;
     }
 
     #home aside figure:nth-child(1) {
@@ -986,6 +973,9 @@ footer h3{
         margin: auto;
         right: 210px;
     }
+
+
+
 
 
 
