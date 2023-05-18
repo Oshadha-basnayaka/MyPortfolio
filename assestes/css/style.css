@@ -986,26 +986,24 @@ footer h3 {
         justify-content: center;
         padding: 20px 0;
         position: relative;
-        height: 60vh;
+        height: 50vh;
     }
 
     #abouth h3 {
         width: 100%;
         text-align: center;
-        margin: auto;
-        bottom: 380px;
+       top: 4%;
         position: absolute;
         font-size: 24px;
     }
 
     #abouth img {
-        margin: auto;
         position: absolute;
-        width: 100%;
+        width: 60%;
+        height: 80%;
         height: auto;
-        max-width: 300px;
-        left: 10px;
-        top: 30%;
+        left: 80px;
+        top: 20%;
     }
 
     #abouth p {
