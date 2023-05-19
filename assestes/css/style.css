@@ -884,6 +884,7 @@ footer h3 {
     header img {
         /*max-width: 80%;*/
         margin-bottom:0;
+        margin-top: -20px;
         width: 200px;
     }
 
