@@ -865,35 +865,32 @@ footer h3 {
 @media all and (min-width: 375px) and (max-width:  425px) {
 
 
-        .header {
-            width: 100%;
-        }
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-        .header img {
-            width: 100%;
-        }
+    header nav ul {
+        flex-direction: row;
+        text-align: center;
+        margin-top: -25px;
+        font-size: 12px;
+    }
 
-        .header nav {
-            width: 100%;
-        }
+    header nav li {
+        margin: 10px 0;
+    }
 
-        .header nav ul {
-            display: flex;
-            flex-direction: column;
-        }
+    header img {
+        /*max-width: 80%;*/
+        margin-bottom:0;
+        width: 200px;
+    }
 
-        .header nav ul li {
-            list-style-type: none;
-            margin-bottom: 10px;
-            margin-top: 2px;
-        }
-
-        .header nav ul li a {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            text-align: center;
-        }
+    header nav a {
+        padding: 5px;
+        border-radius: 3px;
+    }
 
 
 
