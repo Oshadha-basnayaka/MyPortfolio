@@ -85,16 +85,16 @@
           <input type="text" class="form-control bg-white border-black text-black focus-ring-black" id="InputCID">
         </div>
         <div class="mb-3">
-          <label for="InputName" class="form-label text-black">Name</label>
-          <input type="text" class="form-control bg-white border-black text-black focus-ring-black focus-ring" id="InputName">
+          <label for="InputCusName" class="form-label text-black">Name</label>
+          <input type="text" class="form-control bg-white border-black text-black focus-ring-black focus-ring" id="InputCusName">
         </div>
         <div class="mb-3">
-          <label for="inputAddress" class="form-label text-black">Address</label>
-          <input type="text" class="form-control bg-white border-black text-black focus-ring-black focus-ring" id="inputAddress">
+          <label for="inputCusAddress" class="form-label text-black">Address</label>
+          <input type="text" class="form-control bg-white border-black text-black focus-ring-black focus-ring" id="inputCusAddress">
         </div>
         <div class="mb-3">
-          <label for="inputContact" class="form-label text-black">Contact</label>
-          <input type="tel" class="form-control bg-white border-black text-black focus-ring-black focus-ring " id="inputContact">
+          <label for="inputCusContact" class="form-label text-black">Contact</label>
+          <input type="tel" class="form-control bg-white border-black text-black focus-ring-black focus-ring " id="inputCusContact">
         </div>
         <div class="row m-0 gap-2 mt-5">
           <button id="btnSaveCus"type="button" class="btn btn-outline-black  col">Save</button>
@@ -634,16 +634,46 @@
   });
 
 
+  let cusID;
+  let cusName;
+  let cusAddress;
+  let cusContact;
+
+  // let customerIds;
+  // let customerNames;
+  // let customerAddresses;
+  // let customercontacts;
+  let tr;
+
+  let customerDetails;
+  let allCustomers=[];
+
   $("#btnSaveCus").click(function () {
     cusID=$('#InputCID').val();
-    cusName=$('#InputName').val();
-    cusAddress=$('#inputAddress').val();
-    cusContact=$('#inputContact').val();
+    cusName=$('#InputCusName').val();
+    cusAddress=$('#inputCusAddress').val();
+    cusContact=$('#inputCusContact').val();
 
     console.log(cusID,cusName,cusAddress,cusContact);
 
-    let tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
+    customerDetails=[cusID,cusName,cusAddress,cusContact];
+    allCustomers.push(customerDetails);
+
+    console.log(allCustomers);
+
+    // customerIds=[cusID].push();
+    // customerNames=[cusName].push();
+    // customerAddresses=[cusAddress].push();
+    // customercontacts=[cusContact].push();
+
+    //for (let i=0; i<=customerIds.length; i++){
+    tr=$('<tr> <td>'+customerDetails[0]+'</td> <td>'+customerDetails[1]+'</td> <td>'+customerDetails[2]+'</td> <td>'+customerDetails[3]+'</td></tr>');
+
+    //}
     $("#cusTableBody").append(tr)
+
+    // let tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
+    // $("#cusTableBody").append(tr)
   });
 
 
