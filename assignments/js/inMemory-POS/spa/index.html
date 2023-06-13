@@ -16,7 +16,7 @@
   <nav class="navbar navbar-expand-md  bg-white border-bottom border-black">
     <div class="container-fluid">
       <a class="navbar-brand  text-black " style="font-weight: bold"  href="#">BAZZA - FASHION</a>
-      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+      <button class="navbar-toggler bg-body" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
               aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
             <a class="nav-link text-black" >Orders</a>
           </li>
           <li id="btnPlaceOrder" class="nav-item ms-4">
-            <a class="nav-link border-warning border rounded text-black" >Place New
+            <a class="nav-link border-black border rounded text-black" >Place New
               Order</a>
           </li>
         </ul>
@@ -99,6 +99,7 @@
         <div class="row m-0 gap-2 mt-5">
           <button id="btnSaveCus"type="button" class="btn btn-outline-black  col">Save</button>
           <button type="submit" class="btn btn-outline-dark disabled col">Update</button>
+          <button type="submit" class="btn btn-outline-dark disabled col">getAll</button>
         </div>
         <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
@@ -490,7 +491,7 @@
         </form>
       </div>
 
-      <button class="btn btn-outline-light container-fluid mt-5 mb-5" type="submit">Add To Cart</button>
+      <button class="btn btn-outline-dark container-fluid mt-5 mb-5" type="submit">Add To Cart</button>
     </div>
 
     <div class="col m-3 ">
@@ -639,10 +640,7 @@
   let cusAddress;
   let cusContact;
 
-  // let customerIds;
-  // let customerNames;
-  // let customerAddresses;
-  // let customercontacts;
+
   let tr;
 
   let customerDetails;
@@ -656,24 +654,27 @@
 
     console.log(cusID,cusName,cusAddress,cusContact);
 
-    customerDetails=[cusID,cusName,cusAddress,cusContact];
+    let customerDetails={
+      ID:cusID,
+      name:cusName,
+      address:cusName,
+      content:cusContact
+
+    }
+
+
+    //customerDetails=[cusID,cusName,cusAddress,cusContact];
     allCustomers.push(customerDetails);
 
     console.log(allCustomers);
 
-    // customerIds=[cusID].push();
-    // customerNames=[cusName].push();
-    // customerAddresses=[cusAddress].push();
-    // customercontacts=[cusContact].push();
 
-    //for (let i=0; i<=customerIds.length; i++){
     tr=$('<tr> <td>'+customerDetails[0]+'</td> <td>'+customerDetails[1]+'</td> <td>'+customerDetails[2]+'</td> <td>'+customerDetails[3]+'</td></tr>');
 
-    //}
+
     $("#cusTableBody").append(tr)
 
-    // let tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
-    // $("#cusTableBody").append(tr)
+
   });
 
 

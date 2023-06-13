@@ -85,8 +85,9 @@ header img {
     position: absolute;
     margin: auto;
     left: 200px;
-    bottom: 490px;
+    bottom: 480px;
     font-size: 50px;
+    letter-spacing: 2px;
 }
 
 
@@ -106,11 +107,11 @@ header img {
     height: 50px;
     position: absolute;
     margin: auto;
-    top: 390px;
+    top: 450px;
 
 
 }
-
+/*
 #home aside figure:nth-child(1) {
 
     position: absolute;
@@ -154,6 +155,20 @@ header img {
 
     right: 1710px;
 
+}*/
+
+#home ul {
+    margin-top: 30px;
+    left: 6px;
+    position: relative;
+}
+
+#home ul li {
+    display:inline-block;
+    position: relative;
+    right: 670px;
+    top: -18px;
+    margin: -10px;
 }
 
 
@@ -188,11 +203,16 @@ header img {
 
 #abouth p {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5;
     margin: auto;
     position: absolute;
     right: 200px;
+    font-family: 'Akshar Unicode',sans-serif;
+    padding: 10px;
+    background-image: linear-gradient(#FFE6B5, #FFFEFB);
+    border-radius: 30px;
+    box-shadow: 5px 5px 14px -5px;
 }
 
 
@@ -205,7 +225,7 @@ header img {
     align-items: center;
     background-color: #FBF6EC;
     position: relative;
-    height: 120vh;
+    height: 150vh;
 }
 
 #education h3 {
@@ -216,27 +236,47 @@ header img {
 
 
 #education img {
-
-    display: grid;
     transition: transform 0.3s ease;
+    display: grid;
     margin: auto;
-
 }
 
-#education aside img:hover {
+#education img:hover {
     transform: scale(1.1);
 }
 
 #education article {
+    margin: 30px;
     flex: 1 0 100%;
     text-align: center;
+}
 
-    border-radius: 50%;
+#education article p {
+    padding: 20px;
+    background-image: linear-gradient(#FBE8C3, #FFFEFB);
+    border-radius: 20px;
+    box-shadow: 5px 5px 14px -5px;
+    width: 40%;
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+
 }
 
 
 #education aside div {
     text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 14px -5px;
+    background-color: #F8C96D;
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(#F8C96D, #FEEBC6);
+}
+
+#education aside div:hover {
+    transform: scale(1.1);
 }
 
 #education aside div {
@@ -265,6 +305,8 @@ header img {
 
 #skill figure {
     margin: 40px;
+    position: relative;
+    top: -80px;
 }
 
 #skill figure img {
@@ -282,8 +324,26 @@ header img {
 #skill article {
     flex: 1 0 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 21px;
     font-style: initial;
+    font-family: 'Akshar Unicode',sans-serif;
+    position: relative;
+    margin: auto;
+    top: -100px;
+}
+
+#skill article p {
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 14px -5px;
+    background-color: #F8C96D;
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(#FFE8BB, #FFFAF1);
+    width: 50%;
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 
 
@@ -296,19 +356,21 @@ header img {
     justify-content: center;
     align-items: center;
     background-color: #FBF6EC;
-    height: 120vh;
+    height: 80vh;
 }
 
-#myWork h3 {
+#topic {
     width: 100%;
     text-align: center;
-    margin-bottom: 50px;
+    position: relative;
+    margin: 0;
+    left: 0;
+    top: -20px;
+    right: 0;
 }
 
 
 #myWork figure img {
-
-
     display: grid;
     transition: transform 0.3s ease;
 }
@@ -329,6 +391,199 @@ header img {
     color: black;
 }
 
+body > main > section:nth-child(5) {
+    background-color: #FBF6EC;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    min-height: max-content;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 10px 50px;
+    margin: auto;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div:hover {
+    height: 450px;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(1) {
+    position: absolute;
+    width: 350px;
+    height: 220px;
+    background-color: #072227;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    transition: 0.9s;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div:hover > div:nth-child(1) {
+    top: -100px;
+    scale: 0.9;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(1) > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) {
+    position: absolute;
+    top: 225px;
+    width: 100%;
+    padding: 0 30px;
+    height: 45px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div:hover > div:nth-child(2) {
+    height: 250px;
+    top: 150px;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) > h2 {
+    font-family: "Roboto",sans-serif;
+    font-weight: bolder;
+    font-size: 23px;
+    color: #4B4954;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) > p {
+    font-family: "Roboto",sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) > button {
+    width: 100px;
+    height: 35px;
+    font-family: "Akshar Unicode",sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border: 2px solid #35858B;
+    background-color: #35858B;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px -5px #A6A6A6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) > button:hover {
+    border: 2px solid #35858B;
+    background-color: white;
+    color: #35858B;
+    box-shadow: 5px 5px 10px -10px #A6A6A6;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+body > main > section:nth-child(5) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) > button:hover a {
+    color:#007294;
+}
+
+/*assignment*/
+
+#assignmrntContainer {
+    margin: 0;
+    background-color: #FBF6EC;
+}
+
+#assignment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+#assignment div {
+    padding: 1px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 14px -5px;
+    background-image: linear-gradient(#FFE8BB, #FFFAF1);
+}
+
+#assignment div figure a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+}
+
+#assignmrntContainer button {
+    position: relative;
+    width: 130px;
+    height: 40px;
+    background-image: linear-gradient(#FFE8BB, #FFFAF1);
+    border-radius: 5px;
+    box-shadow: 5px 5px 14px -5px;
+    border: none;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#assignmrntContainer button a {
+    text-decoration: none;
+    color: black;
+}
 
 /*contact*/
 
