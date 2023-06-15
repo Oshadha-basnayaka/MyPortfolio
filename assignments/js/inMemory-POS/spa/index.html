@@ -98,8 +98,8 @@
         </div>
         <div class="row m-0 gap-2 mt-5">
           <button id="btnSaveCus"type="button" class="btn btn-outline-black  col">Save</button>
-          <button type="submit" class="btn btn-outline-dark disabled col">Update</button>
           <button type="submit" class="btn btn-outline-dark disabled col">getAll</button>
+          <button id="btnDeleteCus" type="submit" class="btn btn-outline-dark disabled col">Delete</button>
         </div>
         <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
@@ -139,7 +139,7 @@
         <div class="mb-3">
           <label for="InputID" class="form-label text-black">Item ID</label>
           <input type="text" class="form-control bg-white border-black text-black focus-ring-warning"
-                 id="InputID" readonly>
+                 id="InputID" >
         </div>
         <div class="mb-3">
           <label for="InputDesc" class="form-label text-black">Description</label>
@@ -160,7 +160,7 @@
                  id="inputQty">
         </div>
         <div class="row m-0 gap-2 mt-5">
-          <button type="submit" class="btn btn-outline-dark  col">Save</button>
+          <button id="btnSaveItem" type="submit" class="btn btn-outline-dark  col">Save</button>
           <button type="submit" class="btn btn-outline-dark disabled col">Update</button>
         </div>
         <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
@@ -179,109 +179,102 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
 
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+<!--        <tr>-->
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
+<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
+<!--          </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
 
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
+<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
+<!--          </td>-->
+<!--        </tr>-->
 
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+<!--        <tr>-->
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
+<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
+<!--          </td>-->
+<!--        </tr>-->
 
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+<!--        <tr>-->
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
+<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
+<!--          </td>-->
+<!--        </tr>-->
 
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+<!--        <tr>-->
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
+<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
+<!--          </td>-->
+<!--        </tr>-->
 
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
-            <button type="button" class="btn btn-outline-black">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+<!--        <tr>-->
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
+<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
+<!--          </td>-->
+<!--        </tr>-->
 
-        <tr>
-          <th scope="row">I-001</th>
-          <td>t-shirt</td>
-          <td>1200</td>
-          <td>100</td>
-          <td>
+<!--        <tr>-->
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
+<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
+<!--          </td>-->
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
+<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
+<!--          </td>-->
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--          <th scope="row">I-001</th>-->
+<!--          <td>t-shirt</td>-->
+<!--          <td>1200</td>-->
+<!--          <td>100</td>-->
+<!--          <td>-->
+
             <button type="button" class="btn btn-outline-black">Edit</button>
             <button type="button" class="btn btn-outline-danger">Delete</button>
           </td>
@@ -669,13 +662,108 @@
     console.log(allCustomers);
 
 
-    tr=$('<tr> <td>'+customerDetails[0]+'</td> <td>'+customerDetails[1]+'</td> <td>'+customerDetails[2]+'</td> <td>'+customerDetails[3]+'</td></tr>');
+    tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
 
 
     $("#cusTableBody").append(tr)
 
 
   });
+
+
+
+
+  // ITEM SAVE
+
+
+  let itemID;
+  let itemDescription;
+  let itemUnitPrice;
+  let itemQuntity;
+
+
+  let trO;
+
+
+  let allitem=[];
+
+  $("#btnSaveItem").click(function () {
+    itemID=$('#InputItemID').val();
+    itemDescription=$('#InputItemDEscription').val();
+    itemUnitPrice=$('#inputItemUnitPrice').val();
+    itemQuntity=$('#inputItemQuntity').val();
+
+    console.log(itemID,itemDescription,itemUnitPrice,itemQuntity);
+
+    let itemDetails={
+      ID:itemID,
+      name:itemDescription,
+      address:itemUnitPrice,
+      content:itemQuntity
+
+    }
+
+
+
+    allitem.push(itemDetails);
+
+    console.log(allitem);
+
+
+    tr=$('<tr> <td>'+itemID+'</td> <td>'+itemDescription+'</td> <td>'+itemUnitPrice+'</td> <td>'+itemQuntity+'</td></tr>');
+
+
+    $("#item").append(trO)
+
+
+  })
+
+
+
+
+
+
+  // get data from selected row when i click and load it to fileds
+
+
+  $("#cusTableBody").on("click", "tr", function () {
+    // Get data from selected row
+    let selectedRow = $(this);
+    let selectedID = selectedRow.find("td:eq(0)").text();
+    let selectedName = selectedRow.find("td:eq(1)").text();
+    let selectedAddress = selectedRow.find("td:eq(2)").text();
+    let selectedContact = selectedRow.find("td:eq(3)").text();
+
+    // Load data into fields
+    $('#InputCID').val(selectedID);
+    $('#InputCusName').val(selectedName);
+    $('#inputCusAddress').val(selectedAddress);
+    $('#inputCusContact').val(selectedContact);
+  });
+
+// when i select the row delete this row
+
+  // delete customer
+
+  $("#btnDeleteCus").on("click", "tr", function () {
+    // Get data from selected row
+    let selectedRow = $(this);
+    let selectedID = selectedRow.find("td:eq(0)").text();
+    let selectedName = selectedRow.find("td:eq(1)").text();
+    let selectedAddress = selectedRow.find("td:eq(2)").text();
+    let selectedContact = selectedRow.find("td:eq(3)").text();
+
+    // Load data into fields
+    $('#InputCID').val(selectedID);
+    $('#InputCusName').val(selectedName);
+    $('#inputCusAddress').val(selectedAddress);
+    $('#inputCusContact').val(selectedContact);
+
+    // Delete selected row
+    selectedRow.remove();
+  });
+
+
 
 
 

@@ -11,12 +11,12 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
 
 </head>
-<body class="bg-black object-fit-scale">
+<body class="bg-white object-fit-scale">
 <header>
-  <nav class="navbar navbar-expand-md  bg-black border-bottom border-white">
+  <nav class="navbar navbar-expand-md  bg-white border-bottom border-black">
     <div class="container-fluid">
       <a class="navbar-brand  text-warning" href="#">POS System</a>
-      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+      <button class="navbar-toggler bg-black" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
               aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,42 +24,42 @@
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li id="btnHome" class="nav-item">
-            <a class="nav-link text-warning" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link text-black" aria-current="page" href="index.html">Home</a>
           </li>
           <li id="btnCustomer" class="nav-item">
-            <a class="nav-link text-white" >Customers</a>
+            <a class="nav-link text-black" >Customers</a>
           </li>
           <li id="btnItem" class="nav-item">
-            <a class="nav-link text-white" >Items</a>
+            <a class="nav-link text-black" >Items</a>
           </li>
           <li id="btnOrders" class="nav-item">
-            <a class="nav-link text-white" >Orders</a>
+            <a class="nav-link text-black" >Orders</a>
           </li>
           <li id="btnPlaceOrder" class="nav-item ms-4">
-            <a class="nav-link border-warning border rounded text-white" >Place New
+            <a class="nav-link border-black border rounded text-black" >Place New
               Order</a>
           </li>
         </ul>
         <form class="d-flex me-3" role="search">
-          <input class="form-control me-2 bg-black border border-white text-white" type="search"
+          <input class="form-control me-2 bg-white border border-black text-black" type="search"
                  placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
+          <button class="btn btn-outline-dark" type="submit">Search</button>
         </form>
-        <button type="button" class="btn btn-outline-warning">Sign Up</button>
+        <button type="button" class="btn btn-outline-dark">Sign Up</button>
       </div>
     </div>
   </nav>
 </header>
 
-<main id="home" class="bg-black container">
+<main id="home" class="bg-white container">
   <section class="container-fluid fl" >
     <div class="col  object-fit-contain">
       <div class="object-fit-contain">
         <img src="assets/Round%20logo%20bazza.png" style="width: 500px"; height="600px"
              class="center-block d-block mx-auto object-fit-scale">
       </div>
-      <div class="text-white text-center ">
-        <h2 class="text-capitalize text-bg-warning">Bazza Fashion</h2>
+      <div class="text-black text-center ">
+        <h2 class="text-capitalize text-bg-dark">Bazza Fashion</h2>
         <h4>by qulity clothes at low price</h4>
         <p>Devolop By Oshadha Basnayaka</p>
       </div>
@@ -69,44 +69,44 @@
 
 <main id="customer" class="container">
   <section class="row p-4 m-0 object-fit-contain">
-    <nav aria-label="breadcrumb" class="text-white">
+    <nav aria-label="breadcrumb" class="text-black">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item text-white"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active text-white" aria-current="page">Customers</li>
+        <li class="breadcrumb-item text-black"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active text-black" aria-current="page">Customers</li>
       </ol>
     </nav>
 
     <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-    <div class="col border-warning m-3 border rounded object-fit-contain">
-      <h5 class="text-warning text-center m-lg-3 pt-5" >Add a New Customer</h5>
+    <div class="col border-black m-3 border rounded object-fit-contain">
+      <h5 class="text-black text-center m-lg-3 pt-5" >Add a New Customer</h5>
       <form class="m-5">
         <div class="mb-3">
-          <label for="InputCID" class="form-label text-white">Customer ID</label>
-          <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="InputCID" readonly>
+          <label for="InputCID" class="form-label text-black">Customer ID</label>
+          <input type="text" class="form-control bg-white border-black text-black focus-ring-dark" id="InputCID" readonly>
         </div>
         <div class="mb-3">
-          <label for="InputName" class="form-label text-white">Name</label>
-          <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="InputName">
+          <label for="InputName" class="form-label text-dark">Name</label>
+          <input type="text" class="form-control bg-white border-black text-dark focus-ring-dark focus-ring" id="InputName">
         </div>
         <div class="mb-3">
-          <label for="inputAddress" class="form-label text-white">Address</label>
-          <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="inputAddress">
+          <label for="inputAddress" class="form-label text-dark">Address</label>
+          <input type="text" class="form-control bg-white border-dark text-dark focus-ring-dark focus-ring" id="inputAddress">
         </div>
         <div class="mb-3">
           <label for="inputContact" class="form-label text-white">Contact</label>
-          <input type="tel" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring " id="inputContact">
+          <input type="tel" class="form-control bg-white border-black text-black focus-ring-dark focus-ring " id="inputContact">
         </div>
         <div class="row m-0 gap-2 mt-5">
-          <button id="btnSaveCus"type="button" class="btn btn-outline-warning  col">Save</button>
-          <button type="submit" class="btn btn-outline-light disabled col">Update</button>
+          <button id="btnSaveCus"type="button" class="btn btn-outline-dark  col">Save</button>
+          <button type="submit" class="btn btn-outline-dark disabled col">Update</button>
         </div>
         <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
       </form>
     </div>
-    <div class="col border-white m-3  border-start">
-      <table class="table text-white">
-        <thead class="text-warning">
+    <div class="col border-dark m-3  border-start">
+      <table class="table text-dark">
+        <thead class="text-dark">
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Name</th>
@@ -126,41 +126,41 @@
   <section class="row p-4 m-0" >
     <nav aria-label="breadcrumb" class="text-white">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item text-white"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active text-white" aria-current="page">Items</li>
+        <li class="breadcrumb-item text-dark"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active text-dark" aria-current="page">Items</li>
       </ol>
     </nav>
 
     <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-    <div class="col border-warning m-3 border rounded">
-      <h5 class="text-warning text-center m-lg-3 pt-5">Add a New Item</h5>
+    <div class="col border-dark m-3 border rounded">
+      <h5 class="text-dark text-center m-lg-3 pt-5">Add a New Item</h5>
       <form class="m-5">
         <div class="mb-3">
-          <label for="InputID" class="form-label text-white">Item ID</label>
-          <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
+          <label for="InputID" class="form-label text-dark">Item ID</label>
+          <input type="text" class="form-control bg-white border-dark text-dark focus-ring-warning"
                  id="InputID" readonly>
         </div>
         <div class="mb-3">
           <label for="InputDesc" class="form-label text-white">Description</label>
           <input type="text"
-                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+                 class="form-control bg-white border-dark text-dark focus-ring-dark focus-ring"
                  id="InputDesc">
         </div>
         <div class="mb-3">
-          <label for="inputUnitPrice" class="form-label text-white">Unit Price</label>
+          <label for="inputUnitPrice" class="form-label text-dark">Unit Price</label>
           <input type="number"
-                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+                 class="form-control bg-white border-dark text-dark focus-ring-dark focus-ring"
                  id="inputUnitPrice">
         </div>
         <div class="mb-3">
           <label for="inputQty" class="form-label text-white">Quantity</label>
           <input type="number"
-                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                 class="form-control bg-white border-dark text-dark focus-ring-dark focus-ring "
                  id="inputQty">
         </div>
         <div class="row m-0 gap-2 mt-5">
-          <button type="submit" class="btn btn-outline-warning  col">Save</button>
-          <button type="submit" class="btn btn-outline-light disabled col">Update</button>
+          <button type="submit" class="btn btn-outline-dark  col">Save</button>
+          <button type="submit" class="btn btn-outline-dark disabled col">Update</button>
         </div>
         <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
