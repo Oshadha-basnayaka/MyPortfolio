@@ -741,27 +741,24 @@
     $('#inputCusContact').val(selectedContact);
   });
 
-// when i select the row delete this row
 
-  // delete customer
 
-  $("#btnDeleteCus").on("click", "tr", function () {
-    // Get data from selected row
-    let selectedRow = $(this);
-    let selectedID = selectedRow.find("td:eq(0)").text();
-    let selectedName = selectedRow.find("td:eq(1)").text();
-    let selectedAddress = selectedRow.find("td:eq(2)").text();
-    let selectedContact = selectedRow.find("td:eq(3)").text();
+  // button delete ,
+  $('#btnDeleteCus').click(function () {
+    let cusID = $("#InputCID").val();
 
-    // Load data into fields
-    $('#InputCID').val(selectedID);
-    $('#InputCusName').val(selectedName);
-    $('#inputCusAddress').val(selectedAddress);
-    $('#inputCusContact').val(selectedContact);
-
-    // Delete selected row
-    selectedRow.remove();
+    // search matching ID from arraylist, and delete the object with that id
+    for (let i = 0; i < allCustomers.length; i++) {
+      if (cusID === allCustomers[i].ID) {
+        // Delete the object from the array
+        allCustomers.splice(i, 1);
+        break; // Exit the loop after deleting the object
+      }
+    }
+    // update table
+    getAllCustomers();
   });
+
 
 
 

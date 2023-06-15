@@ -2,72 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>case5</title>
-    <link rel="stylesheet" href="nomalize.css">
-</head>
+    <title>Animation Case 03</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
 
-<style>
+    <style>
+        div{
+            overflow: hidden;
+        }
 
-    body{
-
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-
-    }
-
-    body section{
-        animation: slider 10s infinite alternate ;
-        animation-delay: 2s;
-        position: relative;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        height: 500%;
-        display: inline-block;
-    }
-    body section section img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    body section section:nth-child(4){
-        width: 98vw;
-    }
-
-    @keyframes slider {
-        0%{
+        div figure{
+            width: 400%;
+            position: relative;
+            margin: 0;
             left: 0;
-        }
-        25%{
-            left: -100vw;
-        }
-        50%{
-            left: -200vw;
-        }
-        75%{
-            left: -300vw;
-        }
-        100%{
-            left: -400vw;
-        }
-    }
+            animation: 15s slider infinite;
+            animation-direction: alternate-reverse;
 
+        }
+        div figure img{
+            width: 25%;
+            float: left;
+        }
 
-</style>
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            45%{
+                left: -100%
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;
+            }
+            100%{
+                left: -300%;
+            }
+        }
+
+    </style>
+</head>
 <body>
-
-
-<section>
-    <section><img  width="300" height="500" src="assets/20230315205708_IMG_8183.jpg"></section>
-    <section><img width="300" height="500" src="assets/20230315210123_IMG_8189.jpg"></section>
-    <section><img width="300" height="500" src="assets/20230315210337_IMG_8191.jpg"></section>
-    <section><img width="300" height="500" src="assets/20230315211227_IMG_8202.jpg"></section>
-</section>
-
-
+<div>
+    <figure>
+        <img src="assets/222.jpg">
+        <img src="assets/333.jpeg">
+        <img src="assets/11111.webp">
+        <img src="assets/download.jpeg">
+    </figure>
+</div>
 </body>
 </html>
