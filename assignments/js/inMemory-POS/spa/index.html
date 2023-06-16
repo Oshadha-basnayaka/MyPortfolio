@@ -41,9 +41,9 @@
           </li>
         </ul>
         <form class="d-flex me-3" role="search">
-          <input class="form-control me-2 bg-white border border-white text-white" type="search"
-                 placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
+          <input class="form-control me-2 bg-white  border-black text-black" type="search"
+                 placeholder="Search" aria-label="Search" disabled>
+          <button id="search" class="btn btn-outline-dark" type="button">Search</button>
         </form>
         <button type="button" class="btn btn-outline-black">Sign Up</button>
       </div>
@@ -82,7 +82,7 @@
       <form class="m-5">
         <div class="mb-3">
           <label for="InputCID" class="form-label text-black">Customer ID</label>
-          <input type="text" class="form-control bg-white border-black text-black focus-ring-black" id="InputCID">
+          <input type="text" class="form-control bg-white border-black text-black focus-ring-black " id="InputCID">
         </div>
         <div class="mb-3">
           <label for="InputCusName" class="form-label text-black">Name</label>
@@ -98,8 +98,9 @@
         </div>
         <div class="row m-0 gap-2 mt-5">
           <button id="btnSaveCus"type="button" class="btn btn-outline-black  col">Save</button>
-          <button type="submit" class="btn btn-outline-dark disabled col">getAll</button>
-          <button id="btnDeleteCus" type="submit" class="btn btn-outline-dark disabled col">Delete</button>
+          <button type="button" class="btn btn-outline-dark  col">getAll</button>
+          <button id="btnDeleteCus" type="button" class="btn btn-outline-dark  col">Delete</button>
+          <button id="btnUpdateCus" type="button" class="btn btn-outline-dark  col">Update</button>
         </div>
         <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
@@ -160,8 +161,8 @@
                  id="inputQty">
         </div>
         <div class="row m-0 gap-2 mt-5">
-          <button id="btnSaveItem" type="submit" class="btn btn-outline-dark  col">Save</button>
-          <button type="submit" class="btn btn-outline-dark disabled col">Update</button>
+          <button id="btnSaveItem" type="button" class="btn btn-outline-dark  col">Save</button>
+          <button type="button" class="btn btn-outline-dark  col">Update</button>
         </div>
         <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
@@ -180,106 +181,10 @@
         </thead>
         <tbody>
 
-<!--        <tr>-->
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
-<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
-<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
-<!--          </td>-->
-<!--        </tr>-->
-
-<!--        <tr>-->
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
-<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
-<!--          </td>-->
-<!--        </tr>-->
-
-<!--        <tr>-->
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
-<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
-<!--          </td>-->
-<!--        </tr>-->
-
-<!--        <tr>-->
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
-<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
-<!--          </td>-->
-<!--        </tr>-->
-
-<!--        <tr>-->
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
-<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
-<!--          </td>-->
-<!--        </tr>-->
-
-<!--        <tr>-->
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
-<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
-<!--          </td>-->
-<!--        </tr>-->
-
-<!--        <tr>-->
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-<!--            <button type="button" class="btn btn-outline-black">Edit</button>-->
-<!--            <button type="button" class="btn btn-outline-danger">Delete</button>-->
-<!--          </td>-->
-<!--        </tr>-->
-
-<!--        <tr>-->
-<!--          <th scope="row">I-001</th>-->
-<!--          <td>t-shirt</td>-->
-<!--          <td>1200</td>-->
-<!--          <td>100</td>-->
-<!--          <td>-->
-
-            <button type="button" class="btn btn-outline-black">Edit</button>
+        <button type="button" class="btn btn-outline-black">Edit</button>
             <button type="button" class="btn btn-outline-danger">Delete</button>
           </td>
         </tr>
-
         </tbody>
       </table>
     </div>
@@ -627,49 +532,70 @@
     document.getElementById("placeOrder").style.display="none";
   });
 
+// CUSTOMER SAVE
 
   let cusID;
   let cusName;
   let cusAddress;
   let cusContact;
 
-
   let tr;
 
   let customerDetails;
-  let allCustomers=[];
+  let allCustomers = [];
 
   $("#btnSaveCus").click(function () {
-    cusID=$('#InputCID').val();
-    cusName=$('#InputCusName').val();
-    cusAddress=$('#inputCusAddress').val();
-    cusContact=$('#inputCusContact').val();
+    cusID = $('#InputCID').val();
+    cusName = $('#InputCusName').val();
+    cusAddress = $('#inputCusAddress').val();
+    cusContact = $('#inputCusContact').val();
 
-    console.log(cusID,cusName,cusAddress,cusContact);
+    console.log(cusID, cusName, cusAddress, cusContact);
 
-    let customerDetails={
-      ID:cusID,
-      name:cusName,
-      address:cusName,
-      content:cusContact
+    // Regex pattern to validate cusID (c00-001 format)
+    const regexPatternID = /^C\d{2}-\d{3}$/;
 
+    // Regex pattern to validate cusName (letters only)
+    const regexPatternName = /^[A-Za-z]+$/;
+
+    // Regex pattern to validate cusContact (starts with "07" and has 10 characters)
+    const regexPatternContact = /^07\d{8}$/;
+
+    if (!regexPatternID.test(cusID)) {
+      // Invalid cusID format
+      console.log('Invalid cusID format');
+      return;
     }
 
+    if (!regexPatternName.test(cusName)) {
+      // Invalid cusName format
+      console.log('Invalid cusID format');
+      $('#InputCID').addClass('bg-danger'); // Add Bootstrap class to indicate error (red background color)
+      return;
+    }
 
-    //customerDetails=[cusID,cusName,cusAddress,cusContact];
+    if (!regexPatternContact.test(cusContact)) {
+      // Invalid cusContact format
+      console.log('Invalid cusContact format');
+      $('#inputCusContact').css('background-color', 'red'); // Change background color to red
+      return;
+    }
+
+    let customerDetails = {
+      ID: cusID,
+      name: cusName,
+      address: cusAddress,
+      content: cusContact
+    };
+
     allCustomers.push(customerDetails);
 
     console.log(allCustomers);
 
+    tr = $('<tr> <td>' + cusID + '</td> <td>' + cusName + '</td> <td>' + cusAddress + '</td> <td>' + cusContact + '</td></tr>');
 
-    tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
-
-
-    $("#cusTableBody").append(tr)
-
-
+    $("#cusTableBody").append(tr);
   });
-
 
 
 
@@ -743,24 +669,119 @@
 
 
 
-  // button delete ,
-  $('#btnDeleteCus').click(function () {
-    let cusID = $("#InputCID").val();
+  // CUSTOMER button delete ,
+  $("#btnDeleteCus").click(function () {
+    cusID = $('#InputCID').val();
 
-    // search matching ID from arraylist, and delete the object with that id
-    for (let i = 0; i < allCustomers.length; i++) {
-      if (cusID === allCustomers[i].ID) {
-        // Delete the object from the array
-        allCustomers.splice(i, 1);
-        break; // Exit the loop after deleting the object
-      }
+    // Find the index of the customer to delete in the existing customers array (assuming it's named 'allCustomers')
+    let customerIndex = allCustomers.findIndex(function (customer) {
+      return customer.ID === cusID;
+    });
+
+    if (customerIndex !== -1) {
+      // Remove the customer from the array
+      allCustomers.splice(customerIndex, 1);
+
+      console.log(allCustomers);
+
+      // Find the corresponding table row and remove it
+      let rowToDelete = $("#cusTableBody").find("td:contains(" + cusID + ")").closest("tr");
+      rowToDelete.remove();
+
+      console.log("Customer deleted successfully.");
+    } else {
+      console.log("Customer with ID " + cusID + " not found.");
     }
-    // update table
-    getAllCustomers();
+  });
+
+  // CUSTOMER update
+
+
+
+
+  $("#btnUpdateCus").click(function () {
+
+    alert("need update")
+    cusID = $('#InputCID').val();
+    cusName = $('#InputCusName').val();
+    cusAddress = $('#inputCusAddress').val();
+    cusContact = $('#inputCusContact').val();
+
+    console.log(cusID, cusName, cusAddress, cusContact);
+
+    // Find the customer to update in the existing customers array (assuming it's named 'allCustomers')
+    let customerToUpdate = allCustomers.find(function (customer) {
+      return customer.ID === cusID;
+    });
+
+    if (customerToUpdate) {
+      // Update the customer details
+      customerToUpdate.name = cusName;
+      customerToUpdate.address = cusAddress;
+      customerToUpdate.content = cusContact;
+
+      console.log(allCustomers);
+
+      // Find the corresponding table row and update its content
+      let rowToUpdate = $("#cusTableBody").find("td:contains(" + cusID + ")").closest("tr");
+      rowToUpdate.html('<td>' + cusID + '</td><td>' + cusName + '</td><td>' + cusAddress + '</td><td>' + cusContact + '</td>');
+
+      console.log("Customer updated successfully.");
+    } else {
+      console.log("Customer with ID " + cusID + " not found.");
+    }
+  }
+
+  );
+
+
+  //enter ek ghuwama pallhata ynne meken
+
+  $("#InputCID").keydown(function (e){
+    if (e.key=="Enter"){
+      $("#InputCusName").focus();
+    }
+  });
+
+  $("#InputCusName").keydown(function (e){
+    if (e.key=="Enter"){
+      $("#inputCusAddress").focus();
+    }
+  });
+
+
+  $("#inputCusAddress").keydown(function (e){
+    if (e.key=="Enter"){
+      $("#inputCusContact").focus();
+    }
   });
 
 
 
+  // CUSTOMER search
+
+
+  $("#search").click(function () {
+    alert("searching");
+    cusID = $('#InputCID').val();
+
+    // Find the customer in the existing customers array (assuming it's named 'allCustomers')
+    let customerToSearch = allCustomers.find(function (customer) {
+      return customer.ID === cusID;
+    });
+
+    if (customerToSearch) {
+      console.log(customerToSearch);
+      // Update the corresponding fields with the customer details
+      $('#InputCusName').val(customerToSearch.name);
+      $('#inputCusAddress').val(customerToSearch.address);
+      $('#inputCusContact').val(customerToSearch.content);
+
+      console.log("Customer found.");
+    } else {
+      console.log("Customer with ID " + cusID + " not found.");
+    }
+  });
 
 
 
