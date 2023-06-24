@@ -60,7 +60,8 @@
       </div>
       <div class="text-black text-center ">
         <h2 class="text-capitalize text-bg-warning">Bazza Fashion</h2>
-        <h4>by qulity clothes at low price</h4>
+        <h4>by qulity clothes
+          at low price</h4>
         <p>Devolop By Oshadha Basnayaka</p>
       </div>
     </div>
@@ -138,38 +139,41 @@
       <h5 class="text-black text-center m-lg-3 pt-5">Add a New Item</h5>
       <form class="m-5">
         <div class="mb-3">
-          <label for="InputID" class="form-label text-black">Item ID</label>
+          <label for="InputItemID" class="form-label text-black">Item ID</label>
           <input type="text" class="form-control bg-white border-black text-black focus-ring-warning"
-                 id="InputID" >
+                 id="InputItemID" >
         </div>
         <div class="mb-3">
-          <label for="InputDesc" class="form-label text-black">Description</label>
+          <label for="InputItemDescription" class="form-label text-black">Description</label>
           <input type="text"
                  class="form-control bg-white border-black text-black focus-ring-warning focus-ring"
-                 id="InputDesc">
+                 id="InputItemDescription">
         </div>
         <div class="mb-3">
-          <label for="inputUnitPrice" class="form-label text-black">Unit Price</label>
+          <label for="inputItemUnitPrice" class="form-label text-black">Unit Price</label>
           <input type="number"
                  class="form-control bg-white border-black text-black focus-ring-warning focus-ring"
-                 id="inputUnitPrice">
+                 id="inputItemUnitPrice">
         </div>
         <div class="mb-3">
-          <label for="inputQty" class="form-label text-black">Quantity</label>
+          <label for="inputItemQuantity" class="form-label text-black">Quantity</label>
           <input type="number"
                  class="form-control bg-white border-black text-black focus-ring-warning focus-ring "
-                 id="inputQty">
+                 id="inputItemQuantity">
         </div>
         <div class="row m-0 gap-2 mt-5">
           <button id="btnSaveItem" type="button" class="btn btn-outline-dark  col">Save</button>
-          <button type="button" class="btn btn-outline-dark  col">Update</button>
+          <button id="btnSearchItem" type="button" class="btn btn-outline-dark  col">search</button>
+          <button id="btnUpdateItem" type="button" class="btn btn-outline-dark  col">update</button>
+          <button id="btnDeleteItem" type="button" class="btn btn-outline-dark  col">delete</button>
+
         </div>
         <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
       </form>
     </div>
     <div class="col border-white m-3  border-start">
-      <table class="table text-black">
+      <table id="itemTableBody" class="table text-black">
         <thead class="text-black">
         <tr>
           <th scope="col">ID</th>
@@ -599,52 +603,6 @@
 
 
 
-  // ITEM SAVE
-
-
-  let itemID;
-  let itemDescription;
-  let itemUnitPrice;
-  let itemQuntity;
-
-
-  let trO;
-
-
-  let allitem=[];
-
-  $("#btnSaveItem").click(function () {
-    itemID=$('#InputItemID').val();
-    itemDescription=$('#InputItemDEscription').val();
-    itemUnitPrice=$('#inputItemUnitPrice').val();
-    itemQuntity=$('#inputItemQuntity').val();
-
-    console.log(itemID,itemDescription,itemUnitPrice,itemQuntity);
-
-    let itemDetails={
-      ID:itemID,
-      name:itemDescription,
-      address:itemUnitPrice,
-      content:itemQuntity
-
-    }
-
-
-
-    allitem.push(itemDetails);
-
-    console.log(allitem);
-
-
-    tr=$('<tr> <td>'+itemID+'</td> <td>'+itemDescription+'</td> <td>'+itemUnitPrice+'</td> <td>'+itemQuntity+'</td></tr>');
-
-
-    $("#item").append(trO)
-
-
-  })
-
-
 
 
 
@@ -782,6 +740,129 @@
       console.log("Customer with ID " + cusID + " not found.");
     }
   });
+
+
+
+
+
+
+  // ITEM SAVE
+
+  let itemID;
+  let itemDescription;
+  let itemUnitPrice;
+  let itemQuantity;
+
+  let itemDetails;
+
+  let allItems = [];
+
+  $("#btnSaveItem").click(function () {
+    itemID = $('#InputItemID').val();
+    itemDescription = $('#InputItemDescription').val();
+    itemUnitPrice = $('#inputItemUnitPrice').val();
+    itemQuantity = $('#inputItemQuantity').val();
+
+    console.log(itemID, itemDescription, itemUnitPrice, itemQuantity);
+
+    let itemDetails = {
+      id: itemID,
+      description: itemDescription,
+      price : itemUnitPrice,
+      quantity: itemQuantity
+    };
+
+    allItems.push(itemDetails);
+
+    console.log(allItems);
+
+    let tr = $('<tr><td>' + itemID+ '</td><td>' + itemDescription + '</td><td>' + itemUnitPrice + '</td><td>' + itemQuantity + '</td></tr>');
+
+    $("#itemTableBody").append(tr);
+  });
+
+  // get data from selected row when i click and load it to fileds
+
+
+
+  $("#itemTableBody").on("click", "tr", function () {
+    // Get data from selected row
+    let selectedRow = $(this);
+    let selectedID = selectedRow.find("td:eq(0)").text();
+    let selectedDescription = selectedRow.find("td:eq(1)").text();
+    let selectedUnitPrice = selectedRow.find("td:eq(2)").text();
+    let selectedQty = selectedRow.find("td:eq(3)").text();
+
+    // Load data into fields
+    $('#InputItemID').val(selectedID);
+    $('#InputItemDescription').val(selectedDescription);
+    $('#inputItemUnitPrice').val(selectedUnitPrice);
+    $('#inputItemQuantity').val(selectedQty);
+  });
+
+
+
+
+//delete item
+
+
+  $("#btnDeleteItem").click(function () {
+    let selectedItemID = $('#InputItemID').val();
+
+    // Find the index of the item with the selected ID in the allItems array
+    let selectedIndex = allItems.findIndex(function (item) {
+      return item.id === selectedItemID;
+    });
+
+    if (selectedIndex !== -1) {
+      // Remove the item from the allItems array
+      allItems.splice(selectedIndex, 1);
+      console.log("Item deleted:", selectedItemID);
+
+      // Remove the corresponding table row from the itemTableBody
+      $("#itemTableBody tr").each(function () {
+        let rowItemID = $(this).find("td:eq(0)").text();
+        if (rowItemID === selectedItemID) {
+          $(this).remove();
+          return false; // Exit the loop after removing the row
+        }
+      });
+    } else {
+      console.log("Item not found:", selectedItemID);
+    }
+  });
+
+
+
+  //item search
+
+
+
+
+  $("#btnSearchItem").click(function () {
+    let searchID = $('#inputSearchItemID').val();
+
+    let foundItem = allItems.find(function (item) {
+      return item.id === searchID;
+    });
+
+    if (foundItem) {
+      console.log("Item found:", foundItem);
+      // Display the found item details
+      $('#foundItemID').text(foundItem.id);
+      $('#foundItemDescription').text(foundItem.description);
+      $('#foundItemUnitPrice').text(foundItem.price);
+      $('#foundItemQuantity').text(foundItem.quantity);
+    } else {
+      console.log("Item not found:", searchID);
+      // Display a message indicating item not found
+      $('#foundItemID').text("Not found");
+      $('#foundItemDescription').text("");
+      $('#foundItemUnitPrice').text("");
+      $('#foundItemQuantity').text("");
+    }
+  });
+
 
 
 

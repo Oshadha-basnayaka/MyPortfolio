@@ -24,6 +24,8 @@
 
 <body>
 
+
+
 <header>
 
 
@@ -364,9 +366,7 @@
 
 </main>
 
-<script>
-    AOS.init();
-</script>
+
 
 <footer>
 
@@ -375,7 +375,30 @@
 
 </footer>
 
+<div id="loader">
+    <div>
+        <img src="assestes/img/Bassa_logo-removebg-preview.png" alt="logo" />
+        <img src="assestes/img/loader.gif" alt="load" />
+        <h3>Hello and welcome to my portfolio!</h3>
+        <h3>
+            Please wait patiently while we load your experience. This shouldn't
+            take long!
+        </h3>
+    </div>
 </div>
+
+<script>
+    AOS.init();
+
+    let loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+        setInterval(function () {
+            loader.style.display = "none";
+        }, 5000);
+    });
+</script>
+
+
 
 </body>
 

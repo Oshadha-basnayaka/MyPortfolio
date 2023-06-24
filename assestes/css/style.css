@@ -683,7 +683,17 @@ footer h3 {
 
 }
 
-
+#loader {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    transition:opacity 1s;
+}
 
 
 
@@ -1768,8 +1778,6 @@ footer h3 {
 
 }
 
-
-
 @media all and (min-width: 425px) and (max-width:  768px) {
 
 
@@ -2416,7 +2424,6 @@ footer h3 {
 
 
 }
-
 
 @media all and (min-width: 769px) and (max-width:  1024px) {
 
