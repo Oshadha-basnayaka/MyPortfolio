@@ -683,7 +683,7 @@ footer h3 {
 
 }
 
-#loader {
+#loader   {
     background: #fff;
     position: fixed;
     left: 0;
@@ -693,6 +693,12 @@ footer h3 {
     z-index: 1;
     width: 100%;
     transition:opacity 1s;
+}
+
+#loader div h3{
+
+    bottom: 1000px;
+
 }
 
 
