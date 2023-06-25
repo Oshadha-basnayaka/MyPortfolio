@@ -13,7 +13,7 @@ c_vArray.push({field: $("#inputCusContact"), regEx: CUS_CONTACT_REGEX});
 
 function clearCustomerInputFields() {
     //$("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").val("");
-    $("#InputCID,#InputCusName,#inputCusAddress,#inputCusContact").css("border", "1px solid White");
+    $("#InputCID,#InputCusName,#inputCusAddress,#inputCusContact").css("border", "1px solid ");
     $("#InputCID").focus();
     setBtn();
 }

@@ -1,7 +1,7 @@
 var customerdb=[
-    {id: "C00-001", name: "Ushan", address: "Mathara", contact: "0787155885"},
-    {id: "C00-002", name: "Sehan", address: "Panadura", contact: "0787155885"},
-    {id: "C00-003", name: "Achintha", address: "Panadura", contact: "0787155885"}
+    {id: "C00-001", name: "Ushan", address: "Mathara", contact: "0701102633"},
+    {id: "C00-002", name: "Sehan", address: "Panadura", contact: "0701102633"},
+    {id: "C00-003", name: "Achintha", address: "Panadura", contact: "0701102633"}
 ];
 var itemdb=[
     {code:"I00-001",description:"T-shirt",unitPrice: 1450,qtyOnHand: 100},

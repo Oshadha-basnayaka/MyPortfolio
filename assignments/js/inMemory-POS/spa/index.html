@@ -83,19 +83,19 @@
       <form class="m-5">
         <div class="mb-3">
           <label for="InputCID" class="form-label text-black">Customer ID</label>
-          <input type="text" class="form-control bg-white border-black text-black focus-ring-black " id="InputCID">
+          <input type="text" class="form-control bg-dark-subtle  text-black " id="InputCID">
         </div>
         <div class="mb-3">
           <label for="InputCusName" class="form-label text-black">Name</label>
-          <input type="text" class="form-control bg-white border-black text-black focus-ring-black focus-ring" id="InputCusName">
+          <input type="text" class="form-control bg-dark-subtle  text-black focus-ring-black focus-ring" id="InputCusName">
         </div>
         <div class="mb-3">
           <label for="inputCusAddress" class="form-label text-black">Address</label>
-          <input type="text" class="form-control bg-white border-black text-black focus-ring-black focus-ring" id="inputCusAddress">
+          <input type="text" class="form-control bg-dark-subtle  text-black focus-ring-black focus-ring" id="inputCusAddress">
         </div>
         <div class="mb-3">
           <label for="inputCusContact" class="form-label text-black">Contact</label>
-          <input type="tel" class="form-control bg-white border-black text-black focus-ring-black focus-ring " id="inputCusContact">
+          <input type="tel" class="form-control bg-dark-subtle  text-black focus-ring-black focus-ring " id="inputCusContact">
         </div>
         <div class="row m-0 gap-2 mt-5">
           <button id="btnSaveCus"type="button" class="btn btn-outline-black  col">Save</button>
@@ -140,25 +140,25 @@
       <form class="m-5">
         <div class="mb-3">
           <label for="InputItemID" class="form-label text-black">Item ID</label>
-          <input type="text" class="form-control bg-white border-black text-black focus-ring-warning"
+          <input type="text" class="form-control bg-dark-subtle  text-black focus-ring-warning"
                  id="InputItemID" >
         </div>
         <div class="mb-3">
           <label for="InputItemDescription" class="form-label text-black">Description</label>
           <input type="text"
-                 class="form-control bg-white border-black text-black focus-ring-warning focus-ring"
+                 class="form-control bg-dark-subtle  text-black focus-ring-warning focus-ring"
                  id="InputItemDescription">
         </div>
         <div class="mb-3">
           <label for="inputItemUnitPrice" class="form-label text-black">Unit Price</label>
           <input type="number"
-                 class="form-control bg-white border-black text-black focus-ring-warning focus-ring"
+                 class="form-control bg-dark-subtle  text-black focus-ring-warning focus-ring"
                  id="inputItemUnitPrice">
         </div>
         <div class="mb-3">
           <label for="inputItemQuantity" class="form-label text-black">Quantity</label>
           <input type="number"
-                 class="form-control bg-white border-black text-black focus-ring-warning focus-ring "
+                 class="form-control bg-dark-subtle  text-black focus-ring-warning focus-ring "
                  id="inputItemQuantity">
         </div>
         <div class="row m-0 gap-2 mt-5">
@@ -204,7 +204,7 @@
     </ol>
   </nav>
   <section class="row  m-auto">
-    <table class="table text-black container col">
+    <table class="table text-black container col" id="tblBodyOrders">
       <thead class="text-black">
       <tr>
         <th scope="col">Order ID</th>
@@ -219,71 +219,21 @@
       </thead>
       <tbody>
       <tr>
-        <th scope="row">O-001</th>
-        <td>2023-06-19</td>
-        <td>C-001</td>
-        <td>I-001</td>
-        <td>2</td>
-        <td>1000</td>
-        <td>30000</td>
-        <td>
-          <button type="button" class="btn btn-outline-black">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
+
       </tr>
       <tr>
-        <th scope="row">O-001</th>
-        <td>2023-06-19</td>
-        <td>C-001</td>
-        <td>I-001</td>
-        <td>2</td>
-        <td>1000</td>
-        <td>30000</td>
-        <td>
-          <button type="button" class="btn btn-outline-black">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
+
       </tr>
       <tr>
-        <th scope="row">O-001</th>
-        <td>2023-06-19</td>
-        <td>C-001</td>
-        <td>I-001</td>
-        <td>2</td>
-        <td>1000</td>
-        <td>30000</td>
-        <td>
-          <button type="button" class="btn btn-outline-black">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
+
       </tr>
 
       <tr>
-        <th scope="row">O-004</th>
-        <td>2023-05-17</td>
-        <td>C-001</td>
-        <td>I-001</td>
-        <td>2</td>
-        <td>1000</td>
-        <td>30000</td>
-        <td>
-          <button type="button" class="btn btn-outline-black">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
+
       </tr>
 
       <tr>
-        <th scope="row">0-005</th>
-        <td>2023-05-17</td>
-        <td>C-001</td>
-        <td>I-001</td>
-        <td>2</td>
-        <td>1000</td>
-        <td>30000</td>
-        <td>
-          <button type="button" class="btn btn-outline-black">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
+
       </tr>
 
       </tbody>
@@ -311,13 +261,13 @@
             <div class="mb-1 col">
               <label for="InputOID" class="form-label text-black">Order ID</label>
               <input type="text"
-                     class="form-control bg-white border-black text-black focus-ring-warning"
-                     id="InputOID" readonly>
+                     class="form-control bg-white  text-black "
+                     id="InputOID">
             </div>
             <div class="mb-1 col mb-4">
               <label for="InputDate" class="form-label text-black">Date</label>
               <input type="date"
-                     class="form-control bg-white border-black text-black focus-ring-warning focus-ring"
+                     class="form-control bg-white  text-black "
                      id="InputDate">
             </div>
           </div>
@@ -326,20 +276,16 @@
 
           <div class="row border-bottom border-black">
             <div class="mb-1 col">
-              <label for="selectCusId" class="form-label text-black">Customer ID</label>
-              <select class="form-select bg-white text-black focus-ring-warning focus-ring"
+              <label for="selectCusId" class="form-label text-white">Customer ID</label>
+              <select class="form-select bg-white text-black"
                       aria-label="Default select example" id="selectCusId">
-                <option selected>Open this select menu</option>
-                <option value="1">C-001</option>
-                <option value="2">C-002</option>
-                <option value="3">C-003</option>
               </select>
             </div>
             <div class="mb-1 col mb-4">
-              <label for="Name" class="form-label text-black">Customer Name</label>
+              <label for="SelectedCusName" class="form-label text-black">Customer Name</label>
               <input type="text"
-                     class="form-control bg-white border-black text-black focus-ring-warning focus-ring "
-                     id="Name" readonly>
+                     class="form-control bg-white  text-black  "
+                     id="SelectedCusName" readonly>
             </div>
           </div>
 
@@ -348,45 +294,37 @@
           <div class="row">
             <div class="mb-1 col">
               <label for="selectItemId" class="form-label text-black">Item ID</label>
-              <select class="form-select bg-white text-black focus-ring-warning focus-ring"
+              <select class="form-select bg-white text-black "
                       aria-label="Default select example" id="selectItemId">
-                <option selected>Open this select menu</option>
-                <option value="1">I-001</option>
-                <option value="2">I-002</option>
-                <option value="3">I-003</option>
               </select>
             </div>
             <div class="mb-1 col mb-4">
-              <label for="ItemName" class="form-label text-black">Description</label>
+              <label for="selectedItemName" class="form-label text-black">Description</label>
               <input type="text"
-                     class="form-control bg-white border-black text-black focus-ring-warning focus-ring "
-                     id="ItemName" readonly>
+                     class="form-control bg-white  text-black  "
+                     id="selectedItemName" readonly>
             </div>
           </div>
 
           <div class="row">
             <div class="mb-1 col">
-              <label for="UnitPrice" class="form-label text-black">Unit Price</label>
-              <select class="form-select bg-white text-black focus-ring-warning focus-ring"
-                      aria-label="Default select example" id="UnitPrice">
-                <option selected>Open this select menu</option>
-                <option value="1">I-001</option>
-                <option value="2">I-002</option>
-                <option value="3">I-003</option>
-              </select>
+              <label for="UnitPriceP" class="form-label text-black">Unit Price</label>
+              <input type="number"
+                     class="form-control bg-white  text-black "
+                     id="UnitPriceP" readonly>
             </div>
             <div class="mb-1 col">
-              <label for="QtyOnHnd" class="form-label text-black">Qty On Hnd</label>
+              <label for="QtyOnHndP" class="form-label text-black">Qty On Hnd</label>
               <input type="number"
-                     class="form-control bg-white border-black text-black focus-ring-warning focus-ring "
-                     id="QtyOnHnd" readonly>
+                     class="form-control bg-white  text-black "
+                     id="QtyOnHndP" readonly>
             </div>
 
             <div class="mb-1 col">
-              <label for="Qty" class="form-label text-black">Qty</label>
+              <label for="QtyP" class="form-label text-black">Qty</label>
               <input type="number"
-                     class="form-control bg-white border-black text-black focus-ring-warning focus-ring "
-                     id="Qty">
+                     class="form-control bg-white text-black "
+                     id="QtyP">
             </div>
           </div>
 
@@ -394,7 +332,7 @@
         </form>
       </div>
 
-      <button class="btn btn-outline-dark container-fluid mt-5 mb-5" type="submit">Add To Cart</button>
+      <button class="btn btn-outline-dark container-fluid mt-5 mb-5" type="button" id="btnAddToCart">Add To Cart</button>
     </div>
 
     <div class="col m-3 ">
@@ -411,83 +349,62 @@
             <th scope="col">Action</th>
           </tr>
           </thead>
-          <tbody>
-          <tr>
-            <th scope="row">I-001</th>
-            <td>t-shirt</td>
-            <td>1200</td>
-            <td>1</td>
-            <td>15000</td>
-            <td>
-              <button type="button" class="btn btn-outline-dark">Edit</button>
-              <button type="button" class="btn btn-outline-danger">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">I-001</th>
-            <td>t-shirt</td>
-            <td>1200</td>
-            <td>1</td>
-            <td>15000</td>
-            <td>
-              <button type="button" class="btn btn-outline-dark">Edit</button>
-              <button type="button" class="btn btn-outline-danger">Delete</button>
-            </td>
-          </tr>
-
-
-          </tbody>
+          <tbody id="tblCartBody"></tbody>
         </table>
       </div>
       <div class="row mt-5 border border-black rounded">
         <h5 class="text-black  mt-3 mb-2">Purcahse Order</h5>
         <div class="row">
           <div class="mb-1 col">
-            <label for="Total" class="form-label text-black">Total</label>
+            <label for="inputTotal" class="form-label text-white">Total</label>
             <input type="number"
-                   class="form-control bg-white border-black text-black focus-ring-black focus-ring "
-                   id="Total" readonly>
+                   class="form-control bg-white  text-black "
+                   id="inputTotal" readonly>
           </div>
 
-          <div class="mb-5 col text-black">
-            <label for="subTotal" class="form-label ">Sub Total</label>
+          <div class="mb-1 col">
+            <label for="inputDiscount" class="form-label text-black">Discount</label>
             <input type="number"
-                   class="form-control bg-white border-dark text-black focus-ring-black focus-ring mb-4 rounded"
-                   id="subTotal" readonly>
+                   class="form-control bg-white  text-black "
+                   id="inputDiscount">
+          </div>
+          <div class="row">
+            <div class="mb-5 col text-black">
+              <label for="inputSubTotal" class="form-label ">Sub Total</label>
+              <input type="number"
+                     class="form-control bg-white text-black  mb-4 rounded"
+                     id="inputSubTotal" readonly>
+            </div>
           </div>
         </div>
 
         <div class="row">
           <div class="mb-1 col">
-            <label for="cash" class="form-label text-blacke">Cash</label>
+            <label for="inputCash" class="form-label text-black">Cash</label>
             <input type="number"
-                   class="form-control bg-white border-black text-black focus-ring-black focus-ring "
-                   id="cash">
+                   class="form-control bg-white  text-black "
+                   id="inputCash">
           </div>
 
-          <div class="mb-1 col">
-            <label for="discount" class="form-label text-black">Discount</label>
-            <input type="number"
-                   class="form-control bg-white border-black text-black focus-ring-black focus-ring "
-                   id="discount">
-          </div>
 
           <div class="mb-1 col">
-            <label for="balance" class="form-label text-black">Balance</label>
+            <label for="inputBalance" class="form-label text-black">Balance</label>
             <input type="number"
-                   class="form-control bg-white border-black text-black focus-ring-black focus-ring "
-                   id="balance" readonly>
+                   class="form-control bg-white  text-black "
+                   id="inputBalance" readonly>
           </div>
 
         </div>
         <div class="row ms-1">
-          <button class="btn btn-outline-black mt-5 mb-5" type="submit">Purchace</button>
+          <button id="btnPurchase" class="btn btn-outline-dark mt-5 mb-5" type="submit">Purchace</button>
         </div>
 
       </div>
     </div>
   </section>
 </main>
+
+
 
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
