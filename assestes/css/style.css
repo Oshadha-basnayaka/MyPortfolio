@@ -682,24 +682,27 @@ footer h3 {
     font-weight: 100;
 
 }
-
-#loader   {
-    background: #fff;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    width: 100%;
-    transition:opacity 1s;
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#loader div h3{
-
-    bottom: 10px;
-
+#loader div {
+    text-align: center;
 }
+
+#loader img {
+    max-width: 200px;
+}
+
+#loader h3 {
+    margin: 10px 0;
+}
+
+
+
 
 
 
