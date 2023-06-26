@@ -684,16 +684,17 @@ footer h3 {
 }
 
 #loader   {
-    background: #fff;
+    background: #ffff;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     transition:opacity 1s;
-    display: flex;
+    /*display: flex;*/
+    /*flex-direction: row;*/
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -704,21 +705,34 @@ footer h3 {
     text-align: center;
 }
 
-#loader div img :nth-child(1){
-    width: 200px;
+#logo2222{
+    width: 100px;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+    margin: auto;
 }
 
-#loader div img :nth-child(2){
-    width: 50px;
+#gif3{
+    width: 800px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
 
 }
 
 #loader h3 {
     margin: 10px 0;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    bottom: 0;
+    left:0;
+    margin: auto;
 }
 
 
