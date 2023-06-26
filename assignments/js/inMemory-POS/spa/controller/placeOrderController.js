@@ -1,4 +1,4 @@
-let OrderPreID="O00-00";
+ OrderPreID="O00-00";
 let orderNo=1;
 
 $('#btnPurchase').click(function () {
