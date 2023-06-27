@@ -1420,7 +1420,7 @@ footer h3 {
     #home p {
         position: absolute;
         font-size: 18px;
-        bottom: 90px;
+        bottom: 115px;
         left: 150px;
     }
     #home h4 {
@@ -1430,8 +1430,8 @@ footer h3 {
         font-weight: lighter;
         z-index: 5;
         position: absolute;
-        top: 416px;
-        left: 20px;
+        top: 390px;
+        left: 85px;
         text-align: left;
         margin-top: 85px;
     }
@@ -1439,7 +1439,7 @@ footer h3 {
     #home h2 {
 
         position: absolute;
-        bottom: 50px;
+        bottom: 75px;
         left: 80px;
         text-align: center;
         font-size: 26px;
@@ -1447,7 +1447,7 @@ footer h3 {
 
     #home section img {
         width: 54%;
-        height: 61%;
+        height: 55%;
         display: block;
         margin: 100px;
         position: absolute;
@@ -2468,7 +2468,7 @@ footer h3 {
 
 }
 
-@media all and (min-width: 769px) and (max-width:  1024px) {
+@media all and (min-width: 768px) and (max-width:  1024px) {
 
 
 
@@ -2515,18 +2515,17 @@ footer h3 {
         position: absolute;
         font-size: 18px;
         bottom: 294px;
-        left: 157px;
+        left: 87px;
 
     }
     #home h4 {
-
 
         color: black;
         font-weight: lighter;
         z-index: 5;
         position: absolute;
-        top: 416px;
-        left: 20px;
+        top: 225px;
+        left: 85px;
         text-align: left;
         margin-top: 85px;
     }
@@ -2535,13 +2534,13 @@ footer h3 {
 
         position: absolute;
         bottom: 248px;
-        left: 155px;
+        left: 85px;
         text-align: center;
         font-size: 26px;
     }
 
     #home section img {
-        width: 23%;
+        width: 30%;
         height: 62%;
         display: block;
         margin: 100px;
@@ -2549,7 +2548,7 @@ footer h3 {
         right: 0;
         top: 19px;
         bottom: 0;
-        left: 592px;
+        left: 350px;
     }
 
     #home aside figure img {
@@ -2670,6 +2669,16 @@ footer h3 {
         text-align: center;
         border-radius: 50%;
         margin-top: 20px;
+    }
+
+    #education aside div {
+        text-align: center;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 14px -5px;
+        background-color: #F8C96D;
+        transition: transform 0.3s ease;
+        background-image: linear-gradient(#F8C96D, #FEEBC6);
     }
 
 
@@ -3132,7 +3141,7 @@ footer h3 {
 
 }
 
-@media all and (min-width: 1025px) and (max-width:  1440px) {
+@media all and (min-width: 1024px) and (max-width:  1440px) {
 
 
 
