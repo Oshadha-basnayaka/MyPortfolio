@@ -1,4 +1,4 @@
-const PLACEORDER_QTY_REGEX= /^[0-9]+$/;;
+const PLACEORDER_QTY_REGEX= /^[0-9]+$/;
 const PLACEORDER_DISCOUNT_REGEX = /^[0-9]+$/;
 const PLACEORDER_CASH_REGEX = /^[0-9]+$/;
 

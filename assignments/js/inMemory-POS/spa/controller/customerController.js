@@ -25,7 +25,7 @@ $('#btnGetAllCus').click(function () {
     getAllCustomers();
 })
 
-$("#btnDeleteCustomer").click(function () {
+$("#btnDeleteCus").click(function () {
     let id = $("#InputCID").val();
 
     let consent = confirm("Do you want to delete.?");
